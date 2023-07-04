@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>러쉬 로그인</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/join.js"></script>
+    <script src="https://kit.fontawesome.com/612f062b7d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+</head>
+<body>
+    <div class="join_wrap">
+        <div class="back">
+            
+            <div class="txt_box">
+                <div class="banner">
+                    <video autoplay muted loop>
+                        <source src="../img/lush_video2_1.mp4">
+                    </video>
+                    <div class="banner_txt">
+                        <h2>LUSH</h2>
+                        <h3>Fresh<br>Handmade<br>Cosmetics</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <a href="../index.html" class="home"><i class="fa-solid fa-house"></i></a>
+                <h1>Log in</h1>
+                <form action="../index.html" method="get" id="login">
+                    <fieldset>
+                        <legend class="hidden">로그인 폼 입력 양식</legend>
+                        <table class="login_table">
+                            <caption class="hidden">로그인을 위한 아이디, 비밀번호 입력 폼</caption>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="userid">아이디</label></th>
+                                    <td>
+                                        <input type="text" name="userid" id="userid">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="user_pwd">비밀번호</label></th>
+                                    <td>
+                                        <input type="password" name="user_pwd" id="user_pwd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <input type="submit" value="로그인">
+                                        <div class="autologin">
+                                            <input type="checkbox" name="autoLogin" id="autoLogin">
+                                            <label for="autoLogin">자동 로그인</label>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="snslogin">
+                            <li><a href="#"><img src="../img/icon/kakao.png" alt=""><span>카카오로 로그인</span></a></li>
+                            <li><a href="#"><img src="../img/icon/google.png" alt=""><span>구글로 로그인</span></a></li>
+                            <li><a href="#"><img src="../img/icon/naver.png" alt=""><span>네이버로 로그인</span></a></li>
+                        </ul>
+                        <p>아직 회원이 아니신가요? 가입 후 다양한 혜택을 받아 보세요 <a href="signup.html">회원가입</a></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

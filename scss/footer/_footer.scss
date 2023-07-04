@@ -1,0 +1,104 @@
+.footer {
+    // margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+
+    .footer_inner {
+        width: 1500px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+
+        .footer1 {
+            flex: 4;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .address {
+                p {
+                    font: 14px/1.5 "맑은 고딕";
+                    color: #fff;
+                }
+            }
+
+            .copy {
+                p {
+                    font: 14px/1 "맑은 고딕";
+                    color: #ddd;
+                }
+            }
+        }
+
+        .footer2 {
+            padding: 0 0 0 100px;
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .boxes {
+                height: 50%;
+                width: 100%;
+                display: flex;
+
+                div {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p {
+                        &:nth-of-type(1) {
+                            font: bold 18px/1.5 "맑은 고딕";
+                            color: #fff;
+                        }
+                        &:nth-of-type(2) {
+                            font: 16px/1.5 "맑은 고딕";
+                            color: #fff;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    span {
+                        font: 14px/1.5 "맑은 고딕";
+                        color: #fff;
+                    }
+
+                    &:nth-of-type(3) {
+                        position: relative;
+
+                        .footer_sns {
+                            position: absolute;
+                            right: 0;
+                            bottom: -50px;
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+
+                }
+            }
+
+            .footer_menu {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+                li {
+                    a {
+                        font: 14px/1 "맑은 고딕";
+                        color: #fff;
+                    }
+
+                    &:nth-of-type(4) a {
+                        color: yellow;
+                    }
+                }
+            }
+        }
+    }
+}

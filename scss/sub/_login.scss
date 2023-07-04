@@ -1,0 +1,126 @@
+@import "./join";
+
+.join_wrap {
+    .content {
+        .inner {
+            fieldset {
+        
+                .login_table {
+                    
+                    margin: 0 auto;
+                    width: 80%;
+
+                    border-top: 1px solid #333;
+            
+                    tr {
+                        position: relative;
+
+                        &:nth-of-type(1) th, &:nth-of-type(1) td {
+                            border-bottom: 1px solid #ddd;
+                        }
+    
+                        &:nth-of-type(3) th {
+                            padding: 0;
+                        }
+
+                        th, td {
+                            padding: 15px 25px;
+                        }
+    
+                        th {
+
+                            width: 40%;
+                            font-size: 14px;
+                            
+                            input[type="submit"] {
+                                width: 100%;
+                                height: 40px;
+                                background-color: #333;
+                                color: #fff;
+                                font: 14px/40px '맑은 고딕';
+                                margin-bottom: 15px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                                cursor: pointer;
+                            }
+        
+                            .autologin {
+                                display: flex;
+                                justify-content: flex-start;
+                                gap: 10px;
+                                align-items: center;
+        
+                                label {
+                                    font: 14px/1 '맑은 고딕';
+                                }
+    
+                            }
+        
+        
+                        }
+    
+                        td {
+                            input[type="text"],input[type="password"] {
+                                padding: 5px 20px 5px 5px;
+                            }
+                        }
+                    }
+                }
+        
+                .snslogin {
+                    text-align: center;
+                    margin-top: 50px;
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            margin: 0 auto;
+                            display: flex;
+                            width: 80%;
+                            height: 60px;
+                            padding: 20px 40px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            border-radius: 20px;
+                            font: 16/1px '맑은 고딕';
+                            color: #000;
+        
+                            img {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+        
+                        &:nth-of-type(1) a {
+                            background-color: rgb(250, 227, 0);
+                        }
+        
+                        &:nth-of-type(2) a {
+                            background-color: #eee;
+                        }
+        
+                        &:nth-of-type(3) a {
+                            background-color: rgb(6, 190, 52);
+                        }
+        
+                    }
+                }
+    
+                p {
+                    margin-top: 50px;
+                    text-align: center;
+                    font: 14px/1 '맑은 고딕';
+                    color: #000;
+    
+                    a {
+                        font: bold 14px/1 '맑은 고딕';
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+}

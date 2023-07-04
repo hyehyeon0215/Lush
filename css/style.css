@@ -1,0 +1,2083 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@400;800&display=swap");
+.header {
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: 0.3s;
+}
+.header .header_inner {
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .header_inner .top_bar {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  position: relative;
+}
+.header .header_inner .top_bar .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header_inner .top_bar .left .bars {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header_inner .top_bar .left .bars i {
+  font-size: 25px;
+}
+.header .header_inner .top_bar .left .bars:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header .header_inner .top_bar .center {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .header_inner .top_bar .center .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.header .header_inner .top_bar .center .logo img {
+  width: 100%;
+}
+.header .header_inner .top_bar .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .header_inner .top_bar .right .join {
+  display: flex;
+}
+.header .header_inner .top_bar .right .join li a {
+  display: flex;
+  width: 100px;
+  height: 15px;
+  font: 14px/1 "맑은 고딕";
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.header .header_inner .top_bar .right .join li a:hover {
+  text-decoration: underline;
+}
+.header .header_inner .top_bar .right .join li:last-of-type {
+  border-left: 1px solid #ddd;
+}
+.header .header_inner .bottom_bar {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+.header .header_inner .bottom_bar #gnb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+  position: relative;
+  top: 2px;
+}
+.header .header_inner .bottom_bar #gnb li a {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  transition: 0.2s;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font: 16px/1 "맑은 고딕";
+}
+.header .header_inner .bottom_bar #gnb li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.sub_header {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background-color: black;
+  z-index: 10;
+  transition: 0.3s;
+}
+.sub_header .header_inner {
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+}
+.sub_header .header_inner .top_bar {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  position: relative;
+}
+.sub_header .header_inner .top_bar .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub_header .header_inner .top_bar .left .bars {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub_header .header_inner .top_bar .left .bars i {
+  font-size: 25px;
+}
+.sub_header .header_inner .top_bar .left .bars:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sub_header .header_inner .top_bar .center {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub_header .header_inner .top_bar .center .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.sub_header .header_inner .top_bar .center .logo img {
+  width: 100%;
+}
+.sub_header .header_inner .top_bar .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sub_header .header_inner .top_bar .right .join {
+  display: flex;
+}
+.sub_header .header_inner .top_bar .right .join li a {
+  display: flex;
+  width: 100px;
+  height: 15px;
+  font: 14px/1 "맑은 고딕";
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.sub_header .header_inner .top_bar .right .join li a:hover {
+  text-decoration: underline;
+}
+.sub_header .header_inner .top_bar .right .join li:last-of-type {
+  border-left: 1px solid #ddd;
+}
+.sub_header .header_inner .bottom_bar {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+.sub_header .header_inner .bottom_bar #gnb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+  position: relative;
+  top: 2px;
+}
+.sub_header .header_inner .bottom_bar #gnb li a {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  transition: 0.2s;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.sub_header .header_inner .bottom_bar #gnb li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.sub_header .header_inner .bottom_bar #gnb li .sub {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+}
+.footer .footer_inner {
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+}
+.footer .footer_inner .footer1 {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer .footer_inner .footer1 .address p {
+  font: 14px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.footer .footer_inner .footer1 .copy p {
+  font: 14px/1 "맑은 고딕";
+  color: #ddd;
+}
+.footer .footer_inner .footer2 {
+  padding: 0 0 0 100px;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer_inner .footer2 .boxes {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.footer .footer_inner .footer2 .boxes div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+  font: bold 18px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+  font: 16px/1.5 "맑은 고딕";
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer .footer_inner .footer2 .boxes div span {
+  font: 14px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+  position: relative;
+}
+.footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  display: flex;
+  gap: 10px;
+}
+.footer .footer_inner .footer2 .footer_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer .footer_inner .footer2 .footer_menu li a {
+  font: 14px/1 "맑은 고딕";
+  color: #fff;
+}
+.footer .footer_inner .footer2 .footer_menu li:nth-of-type(4) a {
+  color: yellow;
+}
+
+.sub_footer {
+  margin-top: 200px;
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+}
+.sub_footer .footer_inner {
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+}
+.sub_footer .footer_inner .footer1 {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sub_footer .footer_inner .footer1 .address p {
+  font: 14px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.sub_footer .footer_inner .footer1 .copy p {
+  font: 14px/1 "맑은 고딕";
+  color: #ddd;
+}
+.sub_footer .footer_inner .footer2 {
+  padding: 0 0 0 100px;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sub_footer .footer_inner .footer2 .boxes {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.sub_footer .footer_inner .footer2 .boxes div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+  font: bold 18px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+  font: 16px/1.5 "맑은 고딕";
+  color: #fff;
+  margin-bottom: 20px;
+}
+.sub_footer .footer_inner .footer2 .boxes div span {
+  font: 14px/1.5 "맑은 고딕";
+  color: #fff;
+}
+.sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+  position: relative;
+}
+.sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  display: flex;
+  gap: 10px;
+}
+.sub_footer .footer_inner .footer2 .footer_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.sub_footer .footer_inner .footer2 .footer_menu li a {
+  font: 14px/1 "맑은 고딕";
+  color: #fff;
+}
+.sub_footer .footer_inner .footer2 .footer_menu li:nth-of-type(4) a {
+  color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+#bestBath {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#bestBath figure {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+#bestBath figure .banner {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -160px;
+}
+#bestBath figure .banner ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#bestBath figure .banner ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 9999px;
+  transition: 1s;
+}
+#bestBath figure .banner ul li .txt {
+  display: none;
+}
+#bestBath figure .banner ul li h2 {
+  font: 24px/1 "anton";
+  color: #ccc;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 3px;
+  transition: 1.5s;
+}
+#bestBath figure .banner ul li .inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: inherit;
+  background-size: inherit;
+  background-position: inherit;
+}
+#bestBath figure .banner ul li .inner::before, #bestBath figure .banner ul li .inner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: inherit;
+  background-repeat: inherit;
+  background-size: inherit;
+  border-radius: 50%;
+  transition: 1.5s;
+}
+#bestBath figure .banner ul li .inner::before {
+  top: 10%;
+  left: 2%;
+  filter: blur(20px);
+  opacity: 0.7;
+}
+#bestBath figure .banner ul li a {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  transition: opacity 1s, bottom 1s, width 0.5s 1s;
+}
+#bestBath figure .banner ul li a::before, #bestBath figure .banner ul li a span {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 16px/1 "arial";
+  color: #fff;
+  border-radius: 20px;
+  background-image: inherit;
+}
+#bestBath figure .banner ul li a span {
+  opacity: 0;
+  text-indent: -40px;
+  letter-spacing: 1px;
+  transition: 0.5s 1.4s;
+  font: 14px/1 "arial";
+}
+#bestBath figure .banner ul li a::before {
+  transform: translateY(30%);
+  filter: blur(10px) saturate(2);
+  opacity: 0.5;
+}
+#bestBath figure .banner ul li:nth-of-type(1) {
+  transform: translateX(-1600px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(1) .inner::after, #bestBath figure .banner ul li:nth-of-type(1) .inner::before {
+  transform: rotate(-200deg);
+}
+#bestBath figure .banner ul li:nth-of-type(2) {
+  transform: translateX(-1200px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(2) .inner::after, #bestBath figure .banner ul li:nth-of-type(2) .inner::before {
+  transform: rotate(-150deg);
+}
+#bestBath figure .banner ul li:nth-of-type(3) {
+  transform: translateX(-800px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(3) .inner::after, #bestBath figure .banner ul li:nth-of-type(3) .inner::before {
+  transform: rotate(-100deg);
+}
+#bestBath figure .banner ul li:nth-of-type(4) {
+  transform: translateX(-400px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(4) .inner::after, #bestBath figure .banner ul li:nth-of-type(4) .inner::before {
+  transform: rotate(-50deg);
+}
+#bestBath figure .banner ul li:nth-of-type(5) {
+  opacity: 1;
+  transform: translatex(0px) scale(1);
+}
+#bestBath figure .banner ul li:nth-of-type(5) h2 {
+  font-size: 12vw;
+  opacity: 1;
+  top: -20vh;
+  letter-spacing: 0px;
+  color: #000;
+  font-family: "Anton";
+}
+#bestBath figure .banner ul li:nth-of-type(5) .inner::before, #bestBath figure .banner ul li:nth-of-type(5) .inner::after {
+  transform: rotate(0deg);
+}
+#bestBath figure .banner ul li:nth-of-type(5) a {
+  opacity: 1;
+  bottom: -18%;
+  width: 200px;
+}
+#bestBath figure .banner ul li:nth-of-type(5) a span {
+  opacity: 1;
+  text-indent: 0px;
+}
+#bestBath figure .banner ul li:nth-of-type(5) a.off {
+  opacity: 0;
+}
+#bestBath figure .banner ul li:nth-of-type(6) {
+  transform: translateX(400px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(6) .inner::after, #bestBath figure .banner ul li:nth-of-type(6) .inner::before {
+  transform: rotate(50deg);
+}
+#bestBath figure .banner ul li:nth-of-type(7) {
+  transform: translateX(800px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(7) .inner::after, #bestBath figure .banner ul li:nth-of-type(7) .inner::before {
+  transform: rotate(100deg);
+}
+#bestBath figure .banner ul li:nth-of-type(8) {
+  transform: translateX(1200px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(8) .inner::after, #bestBath figure .banner ul li:nth-of-type(8) .inner::before {
+  transform: rotate(150deg);
+}
+#bestBath figure .banner ul li:nth-of-type(9) {
+  transform: translateX(1600px) scale(0.6);
+}
+#bestBath figure .banner ul li:nth-of-type(9) .inner::after, #bestBath figure .banner ul li:nth-of-type(9) .inner::before {
+  transform: rotate(200deg);
+}
+#bestBath figure .btns {
+  position: absolute;
+  bottom: 5vh;
+  right: 10vw;
+  gap: 50px;
+  transition: 0.5s;
+  display: flex;
+}
+#bestBath figure .btns > div {
+  cursor: pointer;
+  width: 120px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #999;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/1 "arial";
+  color: #fff;
+}
+#bestBath figure .btns > div:hover {
+  background-color: #555;
+}
+#bestBath figure .btns.off {
+  right: 5vw;
+  opacity: 0;
+}
+#bestBath figure .popup aside {
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  backdrop-filter: blur(10px);
+  padding: 20vh 5vw 10vh 6vw;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bestBath figure .popup aside h2 {
+  font: 10vw/1 "anton";
+  color: #fff;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1s 0.3s;
+}
+#bestBath figure .popup aside .bath_img {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transition: 1s 0.3s;
+}
+#bestBath figure .popup aside .bath_img .bath {
+  width: 50%;
+}
+#bestBath figure .popup aside .bath_img .bath img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#bestBath figure .popup aside .bath_img .item {
+  margin-left: -60px;
+  display: flex;
+  gap: 10px;
+}
+#bestBath figure .popup aside .bath_img .item li {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#bestBath figure .popup aside .bath_img .item li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#bestBath figure .popup aside .bath_img .item li a:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bestBath figure .popup aside .bath_img .item li a:hover span {
+  opacity: 1;
+}
+#bestBath figure .popup aside .bath_img .item li a img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+#bestBath figure .popup aside .bath_img .item li span {
+  font: 12px/1.5 "맑은 고딕";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 1;
+}
+#bestBath figure .popup aside h3 {
+  position: absolute;
+  top: 80%;
+  color: #fff;
+  font: bold 24px/1 "맑은 고딕";
+}
+#bestBath figure .popup aside p {
+  position: absolute;
+  top: 85%;
+  color: #fff;
+  font: 16px/1.5 "맑은 고딕";
+}
+#bestBath figure .popup aside i {
+  font-size: 30px;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  cursor: pointer;
+}
+#bestBath figure .popup aside.on {
+  left: 0;
+}
+#bestBath figure .popup aside.on h2,
+#bestBath figure .popup aside.on p,
+#bestBath figure .popup aside.on .close {
+  opacity: 1;
+  transform: translateX(0px);
+}
+#bestBath figure .popup #avobath_pop {
+  background-image: url(../img/main/best_bath/avobath/pop.png);
+}
+#bestBath figure .popup #bigblue_pop {
+  background-image: url(../img/main/best_bath/bigblue/pop.png);
+}
+#bestBath figure .popup #gaddess_pop {
+  background-image: url(../img/main/best_bath/gaddess/pop.png);
+}
+#bestBath figure .popup #intergalactic_pop {
+  background-image: url(../img/main/best_bath/intergalactic/pop.png);
+}
+#bestBath figure .popup #intergalactic_pop h2 {
+  font-size: 7vw;
+}
+#bestBath figure .popup #lakes_pop {
+  background-image: url(../img/main/best_bath/lakes/pop.png);
+}
+#bestBath figure .popup #luxe_pop {
+  background-image: url(../img/main/best_bath/luxe/pop.png);
+}
+#bestBath figure .popup #sakura_pop {
+  background-image: url(../img/main/best_bath/sakura/pop.png);
+}
+#bestBath figure .popup #sexbomb_pop {
+  background-image: url(../img/main/best_bath/sexbomb/pop.png);
+}
+#bestBath figure .popup #twilight_pop {
+  background-image: url(../img/main/best_bath/stwilight/pop.png);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+#slide {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+#slide .panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#slide .panel li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  opacity: 0;
+}
+#slide .panel li.makeup .content div {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#slide .panel li.makeup .content div a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#slide .panel li.on {
+  opacity: 1;
+  z-index: 2;
+}
+#slide .panel li .typo {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+}
+#slide .panel li .content {
+  position: absolute;
+  top: 55%;
+  right: 100px;
+  display: flex;
+  gap: 20px;
+}
+#slide .panel li .content div {
+  opacity: 1;
+  width: 200px;
+  height: 350px;
+  background-color: #222;
+}
+#slide .slidebtns {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#slide .slidebtns li {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#slide .slidebtns li.on {
+  height: 50px;
+  border-radius: 15px;
+  background-color: #222;
+}
+#slide .bar {
+  width: 0%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.join_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.join_wrap .back {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.join_wrap .back .txt_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.join_wrap .back .txt_box .banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.join_wrap .back .txt_box .banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join_wrap .back .txt_box .banner .banner_txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  mix-blend-mode: screen;
+  cursor: pointer;
+  transition: 1s;
+}
+.join_wrap .back .txt_box .banner .banner_txt h2 {
+  margin-left: 20px;
+  font-family: "Open Sans", cursive;
+  font-weight: 900;
+  font-size: 10vw;
+}
+.join_wrap .back .txt_box .banner .banner_txt h3 {
+  font-family: "Open Sans", cursive;
+  font-weight: 500;
+  font-size: 40px;
+}
+.join_wrap .back .txt_box .banner .banner_txt:hover {
+  background: none;
+  mix-blend-mode: normal;
+}
+.join_wrap .content {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+.join_wrap .content .inner {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+.join_wrap .content .inner .home {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 5%;
+  right: 10%;
+}
+.join_wrap .content .inner .home .fa-house {
+  font-size: 20px;
+  color: #333;
+}
+.join_wrap .content .inner .home:hover {
+  background-color: #eee;
+}
+.join_wrap .content .inner h1 {
+  font: 500 35px/1 "Open Sans";
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.join_wrap .content .inner fieldset {
+  border: none;
+}
+
+.join_wrap .content .inner fieldset .login_table {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid #333;
+}
+.join_wrap .content .inner fieldset .login_table tr {
+  position: relative;
+}
+.join_wrap .content .inner fieldset .login_table tr:nth-of-type(1) th, .join_wrap .content .inner fieldset .login_table tr:nth-of-type(1) td {
+  border-bottom: 1px solid #ddd;
+}
+.join_wrap .content .inner fieldset .login_table tr:nth-of-type(3) th {
+  padding: 0;
+}
+.join_wrap .content .inner fieldset .login_table tr th, .join_wrap .content .inner fieldset .login_table tr td {
+  padding: 15px 25px;
+}
+.join_wrap .content .inner fieldset .login_table tr th {
+  width: 40%;
+  font-size: 14px;
+}
+.join_wrap .content .inner fieldset .login_table tr th input[type=submit] {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  font: 14px/40px "맑은 고딕";
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.join_wrap .content .inner fieldset .login_table tr th .autologin {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.join_wrap .content .inner fieldset .login_table tr th .autologin label {
+  font: 14px/1 "맑은 고딕";
+}
+.join_wrap .content .inner fieldset .login_table tr td input[type=text], .join_wrap .content .inner fieldset .login_table tr td input[type=password] {
+  padding: 5px 20px 5px 5px;
+}
+.join_wrap .content .inner fieldset .snslogin {
+  text-align: center;
+  margin-top: 50px;
+}
+.join_wrap .content .inner fieldset .snslogin li {
+  margin-bottom: 10px;
+}
+.join_wrap .content .inner fieldset .snslogin li a {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  height: 60px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  font: 16/1px "맑은 고딕";
+  color: #000;
+}
+.join_wrap .content .inner fieldset .snslogin li a img {
+  width: 40px;
+  height: 40px;
+}
+.join_wrap .content .inner fieldset .snslogin li:nth-of-type(1) a {
+  background-color: rgb(250, 227, 0);
+}
+.join_wrap .content .inner fieldset .snslogin li:nth-of-type(2) a {
+  background-color: #eee;
+}
+.join_wrap .content .inner fieldset .snslogin li:nth-of-type(3) a {
+  background-color: rgb(6, 190, 52);
+}
+.join_wrap .content .inner fieldset p {
+  margin-top: 50px;
+  text-align: center;
+  font: 14px/1 "맑은 고딕";
+  color: #000;
+}
+.join_wrap .content .inner fieldset p a {
+  font: bold 14px/1 "맑은 고딕";
+  color: #000;
+  text-decoration: underline;
+}
+
+.join_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.join_wrap .back {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.join_wrap .back .txt_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.join_wrap .back .txt_box .banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.join_wrap .back .txt_box .banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join_wrap .back .txt_box .banner .banner_txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  mix-blend-mode: screen;
+  cursor: pointer;
+  transition: 1s;
+}
+.join_wrap .back .txt_box .banner .banner_txt h2 {
+  margin-left: 20px;
+  font-family: "Open Sans", cursive;
+  font-weight: 900;
+  font-size: 10vw;
+}
+.join_wrap .back .txt_box .banner .banner_txt h3 {
+  font-family: "Open Sans", cursive;
+  font-weight: 500;
+  font-size: 40px;
+}
+.join_wrap .back .txt_box .banner .banner_txt:hover {
+  background: none;
+  mix-blend-mode: normal;
+}
+.join_wrap .content {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+.join_wrap .content .inner {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+.join_wrap .content .inner .home {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 5%;
+  right: 10%;
+}
+.join_wrap .content .inner .home .fa-house {
+  font-size: 20px;
+  color: #333;
+}
+.join_wrap .content .inner .home:hover {
+  background-color: #eee;
+}
+.join_wrap .content .inner h1 {
+  font: 500 35px/1 "Open Sans";
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+.join_wrap .content .inner fieldset {
+  border: none;
+}
+
+.join_wrap .content .inner fieldset .signup_table {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid #333;
+}
+.join_wrap .content .inner fieldset .signup_table tr {
+  position: relative;
+  font-family: "맑은 고딕";
+}
+.join_wrap .content .inner fieldset .signup_table tr th, .join_wrap .content .inner fieldset .signup_table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+.join_wrap .content .inner fieldset .signup_table tr:nth-of-type(6) th, .join_wrap .content .inner fieldset .signup_table tr:nth-of-type(6) td, .join_wrap .content .inner fieldset .signup_table tr:nth-of-type(7) th, .join_wrap .content .inner fieldset .signup_table tr:nth-of-type(7) td {
+  border-bottom: none;
+}
+.join_wrap .content .inner fieldset .signup_table tr th {
+  width: 30%;
+  font-size: 14px;
+}
+.join_wrap .content .inner fieldset .signup_table tr th input[type=reset],
+.join_wrap .content .inner fieldset .signup_table tr th input[type=submit] {
+  width: 49%;
+  height: 40px;
+  background-color: #333;
+  font: bold 14px/40px "맑은 고딕";
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td {
+  position: relative;
+}
+.join_wrap .content .inner fieldset .signup_table tr td input[type=text], .join_wrap .content .inner fieldset .signup_table tr td input[type=password] {
+  padding: 5px 20px 5px 5px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td #toggleBtn {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join_wrap .content .inner fieldset .signup_table tr td #toggleBtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+.join_wrap .content .inner fieldset .signup_table tr td #toggleBtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .addressNum {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .addressNum #address_num {
+  width: 30%;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .addressNum #address_btn {
+  border: 1px solid #333;
+  background-color: #fff;
+  width: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .addressNum #address_btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.join_wrap .content .inner fieldset .signup_table tr td #address {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td #address2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .email_box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .email_box #email {
+  width: 30%;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .email_box span {
+  font-size: 14px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .email_box #domain {
+  width: 30%;
+}
+.join_wrap .content .inner fieldset .signup_table tr td .email_box #domain-list {
+  padding: 5px 20px 5px 5px;
+}
+.join_wrap .content .inner fieldset .signup_table tr td p {
+  font: 12px/1 "맑은 고딕";
+  color: 0;
+  text-align: left;
+  margin-top: 7px;
+}
+
+.address_bg {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 7;
+}
+
+.address_pop {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 600px;
+  z-index: 8;
+}
+.address_pop header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 0 20px;
+}
+.address_pop header h1 {
+  font: 18px/50px "맑은 고딕";
+  color: #fff;
+}
+.address_pop header i {
+  font-size: 18px;
+  line-height: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+.address_pop .tab {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+}
+.address_pop .tab li {
+  width: 50%;
+  height: 80%;
+  text-align: center;
+}
+.address_pop .tab li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  border-bottom: none;
+}
+.address_pop .tab li.on a {
+  background-color: #eee;
+  color: #888;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.address_pop .search {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+}
+.address_pop .search .left {
+  flex: 2;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/1 "맑은 고딕";
+  color: #666;
+}
+.address_pop .search .right {
+  flex: 8;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+.address_pop .search .right .search_wrap {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.address_pop .search .right .search_wrap #address_input {
+  flex: 8;
+  padding: 2px 0;
+}
+.address_pop .search .right .search_wrap #address_searchBtn {
+  flex: 2;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+.address_pop .search .right p {
+  margin-top: 5px;
+  font: 12px/1 "맑은 고딕";
+}
+.address_pop .result {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+.address_pop .result p {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  opacity: 1;
+  font: 16px/1 "맑은 고딕";
+}
+.address_pop .result table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  opacity: 0;
+  width: 100%;
+  padding: 0 20px;
+  display: none;
+}
+.address_pop .result table thead {
+  width: 100%;
+  height: 40px;
+  background-color: #eee;
+}
+.address_pop .result table thead tr th {
+  font: 12px/1 "맑은고딕";
+  color: #666;
+}
+.address_pop .result table tbody {
+  width: 100%;
+}
+.address_pop .result table tbody tr td {
+  border-bottom: 1px solid #eee;
+}
+.address_pop .result table tbody tr td:nth-of-type(1) {
+  text-align: center;
+  font: 16px/1 "맑은고딕";
+  color: #000;
+  border-right: 1px solid #eee;
+}
+.address_pop .result table tbody tr td ul {
+  padding: 10px;
+}
+.address_pop .result table tbody tr td ul li a {
+  font: 14px/1 "맑은고딕";
+  color: #000;
+}
+.address_pop footer {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+}
+.address_pop footer button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  color: #fff;
+}
+
+.isotope {
+  width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.isotope .isotope_header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.isotope .isotope_header .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+.isotope .isotope_header .top .icon {
+  display: flex;
+  gap: 10px;
+}
+.isotope .isotope_header .top .icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.isotope .isotope_header .top .icon i:hover {
+  background-color: #eee;
+}
+.isotope .isotope_header .bottom {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+}
+.isotope .isotope_nav {
+  width: 1500px;
+  height: 30px;
+  margin: 0px auto 50px;
+  background: linear-gradient(to right, white, red, orange, yellow, green, blue, purple, black);
+  display: flex;
+  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+}
+.isotope .isotope_nav li {
+  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+}
+.isotope .isotope_nav li a {
+  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+  display: flex;
+  width: 187.5px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.isotope .isotope_box {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+}
+.isotope .isotope_box article {
+  width: 20%;
+  padding: 10px;
+  float: left;
+}
+.isotope .isotope_box article div {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.isotope .isotope_box article div img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.isotope .isotope_box article div .txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 0px;
+}
+.isotope .isotope_box article div .txt p {
+  text-align: center;
+  color: #fff;
+}
+
+.sub_inner {
+  width: 1500px;
+  margin: 100px auto -50px;
+}
+.sub_inner .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_inner .title h1 {
+  font: bold 36px/1 "맑은 고딕";
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.sub_inner .title img {
+  margin-right: 20px;
+  width: 80px;
+}
+.sub_inner span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 50px;
+}
+.sub_inner .map_content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
+}
+.sub_inner .map_content #map {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.sub_inner .map_content .result_store {
+  width: 500px;
+  height: 100%;
+  display: none;
+}
+.sub_inner .map_content .result_store ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sub_inner .map_content .result_store ul li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.sub_inner .map_content .result_store ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sub_inner .map_content .result_store ul li a img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  opacity: 0;
+}
+.sub_inner .map_content .result_store ul li a p {
+  z-index: 7;
+  color: #fff;
+  font: 16px/1 "맑은 고딕";
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+}
+.sub_inner .map_content .result_store ul li a p:nth-of-type(1) {
+  font: bold 20px/1 "맑은 고딕";
+  font-weight: bold;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sub_inner .map_content .result_store ul li a p:nth-of-type(2) {
+  font: 14px/1 "맑은 고딕";
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sub_inner .map_content .result_store ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.01);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.sub_inner .map_content .result_store ul li a:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sub_inner .map_content .result_store ul li.on {
+  opacity: 1;
+}
+.sub_inner .map_content .result_store ul li.on a {
+  opacity: 1;
+}
+.sub_inner .map_content .result_store ul li.on a img {
+  opacity: 1;
+}
+.sub_inner .map_content .result_store ul li.on:hover p {
+  opacity: 1;
+}
+.sub_inner .map_content .map_select {
+  width: 480px;
+}
+.sub_inner .map_content .map_select #local_select {
+  width: 100%;
+  padding: 7px 0;
+  margin-bottom: 10px;
+}
+.sub_inner .map_content .map_select .localSearchBtn {
+  width: 100%;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  border: none;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sub_inner .map_content .map_select span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+.sub_inner .map_content .map_select p {
+  font: 12px/1 "맑은 고딕";
+  color: #888;
+}
+.sub_inner .map_content .map_select .result_list {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  opacity: 0;
+}
+.sub_inner .map_content .map_select .result_list ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 5px;
+}
+.sub_inner .map_content .map_select .result_list ul li a {
+  font: 16px/1 "맑은 고딕";
+  color: #000;
+}
+.sub_inner .map_content .map_select .result_list ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.sub_inner .map_content .map_select .result_list ul li.on > a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.sub_inner .map_content .map_select .result_list.on {
+  opacity: 1;
+}
+
+.brand_content {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.brand_content .brandNav {
+  width: 15%;
+  height: 100%;
+  padding: 5px 20px;
+}
+.brand_content .brandNav li {
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+}
+.brand_content .brandNav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font: bold 18px/1 "맑은 고딕";
+  color: #333;
+}
+.brand_content .brandNav li a i {
+  display: none;
+  color: #333;
+  transition: 0.5s;
+}
+.brand_content .brandNav li:hover {
+  margin-bottom: 20px;
+}
+.brand_content .brandNav li:hover a {
+  border-bottom: 2px solid #000;
+  justify-content: space-between;
+}
+.brand_content .brandNav li:hover a i {
+  display: block;
+}
+.brand_content .brandNav li.on {
+  margin-bottom: 20px;
+}
+.brand_content .brandNav li.on a {
+  border-bottom: 2px solid #000;
+  justify-content: space-between;
+}
+.brand_content .brandNav li.on a i {
+  display: block;
+}
+.brand_content .brandBox {
+  width: 85%;
+  height: 100%;
+  position: relative;
+}
+.brand_content .brandBox article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.brand_content .brandBox article.lushIntroduce {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+.brand_content .brandBox article.lushIntroduce div {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.brand_content .brandBox article.lushIntroduce div h2 {
+  position: absolute;
+  z-index: 5;
+  left: 5%;
+  top: 20%;
+  font: bold 20px/1.5 "맑은 고딕";
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.brand_content .brandBox article.lushIntroduce div p {
+  position: absolute;
+  z-index: 5;
+  left: 5%;
+  bottom: 20%;
+  font: 14px/1.5 "맑은 고딕";
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.brand_content .brandBox article.lushIntroduce div::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: -100%;
+  left: 0;
+  transition: 0.5s;
+}
+.brand_content .brandBox article.lushIntroduce div:hover {
+  flex: 2;
+}
+.brand_content .brandBox article.lushIntroduce div:hover::after {
+  top: 0;
+}
+.brand_content .brandBox article.lushIntroduce div:hover h2 {
+  opacity: 1;
+}
+.brand_content .brandBox article.lushIntroduce div:hover p {
+  opacity: 1;
+}
+.brand_content .brandBox article.lushHistory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.brand_content .brandBox article.lushHistory div.left {
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+}
+.brand_content .brandBox article.lushHistory div.left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.brand_content .brandBox article.lushHistory div.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.brand_content .brandBox article.lushHistory div.right .txt {
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+.brand_content .brandBox article.lushHistory div.right .txt li {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+.brand_content .brandBox article.lushHistory div.right .txt li p {
+  font: 16px/2 "맑은 고딕";
+}
+.brand_content .brandBox article.lushHistory div.right .txt li h1 {
+  font: bold 40px/1.5 "맑은 고딕";
+}
+.brand_content .brandBox article.lushHistory div.right .txt li.on {
+  opacity: 1;
+}
+.brand_content .brandBox article.lushHistory div.right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+}
+.brand_content .brandBox article.lushHistory div.right a .fa-angle-right {
+  font-size: 80px;
+  color: #000;
+}
+.brand_content .brandBox article.lushIdeology {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 20px;
+}
+.brand_content .brandBox article.lushIdeology .content {
+  width: 100%;
+  height: 100%;
+}
+.brand_content .brandBox article.lushIdeology .content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.brand_content .brandBox article.lushIdeology .content ul li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.brand_content .brandBox article.lushIdeology .content ul li p {
+  display: none;
+}
+.brand_content .brandBox article.lushIdeology .content ul li span {
+  display: none;
+}
+.brand_content .brandBox article.lushIdeology .content ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.brand_content .brandBox article.lushIdeology .content ul li.on {
+  flex: 12;
+}
+.brand_content .brandBox article.lushIdeology .content ul li.on img {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(0);
+  border-radius: 50%;
+}
+.brand_content .brandBox article.lushIdeology .content ul li.on p:nth-of-type(1) {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 30%;
+  font: bold 25px/1 "맑은 고딕";
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.brand_content .brandBox article.lushIdeology .content ul li.on p:nth-of-type(2) {
+  position: absolute;
+  display: block;
+  top: 17%;
+  left: 30%;
+  font: 16px/1.5 "맑은 고딕";
+}
+.brand_content .brandBox article.on {
+  opacity: 1;
+  z-index: 2;
+}
+
+.sub_inner .youtube {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
+
+.spa_content {
+  width: 1500px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.spa_content div {
+  width: 100%;
+}
+.spa_content div ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.spa_content div ul li {
+  flex: 1;
+  background-color: aqua;
+}
+.spa_content div ul li:nth-of-type(1) {
+  height: 600px;
+}
+.spa_content div ul li:nth-of-type(2) {
+  height: 700px;
+}
+.spa_content div ul li:nth-of-type(3) {
+  height: 500px;
+}
+.spa_content div ul li:nth-of-type(4) {
+  height: 700px;
+}
+.spa_content div ul li:nth-of-type(5) {
+  height: 700px;
+}
+
+.sub_inner .youtube {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
+
+.spa_content {
+  width: 1500px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.spa_content div {
+  width: 100%;
+}
+.spa_content div ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+.spa_content div ul li {
+  flex: 1;
+  background-color: aqua;
+}
+.spa_content div ul li:nth-of-type(1) {
+  height: 600px;
+}
+.spa_content div ul li:nth-of-type(2) {
+  height: 700px;
+}
+.spa_content div ul li:nth-of-type(3) {
+  height: 500px;
+}
+.spa_content div ul li:nth-of-type(4) {
+  height: 700px;
+}
+.spa_content div ul li:nth-of-type(5) {
+  height: 700px;
+}
+
+/*# sourceMappingURL=style.css.map */
