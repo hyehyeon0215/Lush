@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@400;800&display=swap');
+@import "./common/reset";
+@import "./common/mixin";
 @import "./header/header";
 @import "./header/sub-header";
 @import "./footer/footer";
 @import "./footer/sub-footer";
-@import "./common/reset";
-@import "./common/mixin";
 @import "./main/bestbath";
 @import "./main/brand";
 @import "./main/slide";

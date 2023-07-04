@@ -26,20 +26,35 @@ section {
             opacity: 0;
 
 
-            &.makeup {
-                .content {
-                    div {
-                        background-color: rgba(0, 0, 0, 0.5);
-                        a {
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
+
+            .content {
+                position: absolute;
+                top: 55%;
+                right: 100px;
+                display: flex;
+                gap: 20px;
+                div {
+                    opacity: 1;
+                    width: 200px;
+                    height: 350px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    a {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
                 }
             }
+        
 
             &.on {
                 opacity: 1;
@@ -51,22 +66,6 @@ section {
                 top: 15%;
                 right: 0%;
             }
-
-            .content {
-                position: absolute;
-                top: 55%;
-                right: 100px;
-                display: flex;
-                gap: 20px;
-
-                div {
-                    opacity: 1;
-                    width: 200px;
-                    height: 350px;
-                    background-color: #222;
-                }
-            }
-
             
         }
 
@@ -107,3 +106,104 @@ section {
         z-index: 4;
     }
 }
+
+// @media screen and (max-width: $mobile) {
+//     section {
+//         width: 100vw;
+//         height: 100vh;
+//     }
+
+//     #slide {
+//         width: 100vw;
+
+//         .panel {
+//             width: 100vw;
+
+//             li {
+//                 width: 100vw;
+//                 background-size: cover;
+
+//                 &.makeup {
+//                     .content {
+//                         div {
+//                             background-color: rgba(0, 0, 0, 0.5);
+
+//                             a {
+//                                 img {
+//                                     width: 100vw;
+//                                     height: 100%;
+//                                     object-fit: contain;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 &.on {
+//                     opacity: 1;
+//                     z-index: 2;
+//                 }
+
+//                 .typo {
+//                     position: absolute;
+//                     top: 15%;
+//                     right: 0%;
+//                 }
+
+//                 .content {
+//                     position: absolute;
+//                     top: 55%;
+//                     right: 100px;
+//                     display: flex;
+//                     gap: 20px;
+
+//                     div {
+//                         opacity: 1;
+//                         width: 200px;
+//                         height: 350px;
+//                         background-color: #222;
+//                     }
+//                 }
+
+
+//             }
+
+//         }
+
+//         .slidebtns {
+//             position: absolute;
+//             right: 30px;
+//             top: 50%;
+//             z-index: 3;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+
+//             li {
+//                 width: 10px;
+//                 height: 10px;
+//                 background-color: #fff;
+//                 transition: 0.5s;
+//                 cursor: pointer;
+//                 border-radius: 50%;
+
+//                 &.on {
+//                     height: 50px;
+//                     border-radius: 15px;
+//                     background-color: #222;
+//                 }
+//             }
+//         }
+
+//         .bar {
+//             width: 0%;
+//             height: 10px;
+//             background-color: rgba(0, 0, 0, 0.5);
+//             position: absolute;
+//             left: 0;
+//             bottom: 0;
+//             z-index: 4;
+//         }
+//     }
+
+// }
