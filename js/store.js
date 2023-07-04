@@ -6,7 +6,7 @@ const store = document.querySelector(".result_store");
 const localSearchBtn = document.querySelector(".localSearchBtn");
 const resultList = document.querySelector(".result_list");
 
-var mapoptions = { //
+var mapoptions = {
     center: new kakao.maps.LatLng(37.583143, 127.0000885),
     level: 3
 };
