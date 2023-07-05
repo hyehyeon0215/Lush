@@ -206,21 +206,20 @@
                 display: flex;
                 width: 100%;
                 height: 100%;
-                border: 1px solid #000;
                 justify-content: center;
                 align-items: center;
                 font-size: 14px;
-                color: #000;
-                background-color: #fff;
-                border-bottom: none;
-                
-            }
-
-            &.on a{
                 background-color: #eee;
                 color: #888;
                 border: none;
                 border-bottom: 1px solid #000;
+            }
+
+            &.on a{
+                color: #000;
+                background-color: #fff;
+                border: 1px solid #000;
+                border-bottom: none;
             }
         }
     }
@@ -256,7 +255,7 @@
                     padding: 2px 0;
                 }
 
-                #address_searchBtn {
+                .address_searchBtn {
                     flex: 2;
                     border: none;
                     background-color: #333;
@@ -281,7 +280,7 @@
 
         p {
             position: absolute;
-            z-index: 5;
+            z-index: 2;
             top: 0;
             left: 0;
             width: 100%;
@@ -294,54 +293,65 @@
             font: 16px/1 "맑은 고딕";
         }
 
-        table {
+        .address_searchResult {
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 6;
+            z-index: 3;
             opacity: 0;
-            width: 100%;
             padding: 0 20px;
-            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
 
-            thead {
+            table {
                 width: 100%;
-                height: 40px;
-                background-color: #eee;
-                tr {
-                    th {
-                        font: 12px/1 "맑은고딕";
-                        color: #666;
+    
+                thead {
+                    width: 100%;
+                    height: 40px;
+                    background-color: #eee;
+                    tr {
+                        th {
+                            font: 12px/1 "맑은고딕";
+                            color: #666;
+                        }
                     }
                 }
-            }
+    
+                tbody {
+                    width: 100%;
+    
+                    tr {
+                        td {
+                            &:nth-of-type(1) {
+                                text-align: center;
+                                font: 16px/1 "맑은고딕";
+                                color: #000;
+                                border-right: 1px solid #eee;
+                            }
+    
+                            ul {
+                                padding: 10px;
+                                li {
+                                    a {
+                                        font: 14px/1 "맑은고딕";
+                                        color: #000;
 
-            tbody {
-                width: 100%;
-
-                tr {
-                    td {
-                        &:nth-of-type(1) {
-                            text-align: center;
-                            font: 16px/1 "맑은고딕";
-                            color: #000;
-                            border-right: 1px solid #eee;
-                        }
-
-                        ul {
-                            padding: 10px;
-                            li {
-                                a {
-                                    font: 14px/1 "맑은고딕";
-                                    color: #000;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
                                 }
                             }
+                            border-bottom: 1px solid #eee;
                         }
-                        border-bottom: 1px solid #eee;
                     }
                 }
             }
+    
         }
+
 
         
     }

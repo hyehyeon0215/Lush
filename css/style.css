@@ -23,6 +23,10 @@ a {
   opacity: 0;
 }
 
+@font-face {
+  src: url("../../font/Lush.ttf");
+  font-family: "lush";
+}
 .header {
   width: 100%;
   height: 130px;
@@ -293,9 +297,6 @@ a {
   background-color: #ddd;
   color: #000;
 }
-.sub_header .header_inner .bottom_bar #gnb li .sub {
-  display: none;
-}
 
 .footer {
   width: 100%;
@@ -467,6 +468,18 @@ a {
   height: 100vh;
   position: relative;
 }
+#bestBath h1 {
+  z-index: 3;
+  position: absolute;
+  font-size: 25px;
+  opacity: 1;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 0px;
+  color: #ddd;
+  font-family: "LUSH";
+}
 #bestBath figure {
   width: 100%;
   height: 100vh;
@@ -504,8 +517,8 @@ a {
   display: none;
 }
 #bestBath figure .banner ul li h2 {
-  font: 24px/1 "anton";
-  color: #ccc;
+  font: 24px/1 "LUSH";
+  color: #000;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -611,12 +624,12 @@ a {
   transform: translatex(0px) scale(1);
 }
 #bestBath figure .banner ul li:nth-of-type(5) h2 {
-  font-size: 12vw;
+  font-size: 5vw;
   opacity: 1;
-  top: -20vh;
+  top: -10vh;
   letter-spacing: 0px;
   color: #000;
-  font-family: "Anton";
+  font-family: "LUSH";
 }
 #bestBath figure .banner ul li:nth-of-type(5) .inner::before, #bestBath figure .banner ul li:nth-of-type(5) .inner::after {
   transform: rotate(0deg);
@@ -624,7 +637,7 @@ a {
 #bestBath figure .banner ul li:nth-of-type(5) a {
   opacity: 1;
   bottom: -18%;
-  width: 200px;
+  width: 150px;
 }
 #bestBath figure .banner ul li:nth-of-type(5) a span {
   opacity: 1;
@@ -667,25 +680,26 @@ a {
 }
 #bestBath figure .btns > div {
   cursor: pointer;
-  width: 120px;
-  height: 36px;
-  border-radius: 18px;
-  background-color: #999;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font: 12px/1 "arial";
-  color: #fff;
+  color: #000;
 }
-#bestBath figure .btns > div:hover {
-  background-color: #555;
+#bestBath figure .btns > div i {
+  font-size: 60px;
+}
+#bestBath figure .btns > div i:hover {
+  font-size: 80px;
 }
 #bestBath figure .btns.off {
   right: 5vw;
   opacity: 0;
 }
 #bestBath figure .popup aside {
+  z-index: 4;
   width: 50vw;
   height: 100%;
   position: absolute;
@@ -828,12 +842,206 @@ a {
   background-image: url(../img/main/best_bath/sexbomb/pop.png);
 }
 #bestBath figure .popup #twilight_pop {
-  background-image: url(../img/main/best_bath/stwilight/pop.png);
+  background-image: url(../img/main/best_bath/twilight/pop.png);
 }
 
-section {
+#brand {
+  padding: 50px 0;
   width: 100%;
-  height: 100vh;
+  height: 2000px;
+}
+#brand .brand_inner {
+  width: 1500px;
+  margin: 0 auto;
+}
+#brand .brand_inner .brand_header {
+  width: 100%;
+  height: 100%;
+}
+#brand .brand_inner .brand_header .brand_tab {
+  margin: 200px 50px 0;
+  display: flex;
+  position: relative;
+}
+#brand .brand_inner .brand_header .brand_tab li {
+  width: 200px;
+  height: 40px;
+}
+#brand .brand_inner .brand_header .brand_tab li a {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 40px;
+  color: #000;
+}
+#brand .brand_inner .brand_header .brand_tab li a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+#brand .brand_inner .brand_header .brand_tab li a span:nth-of-type(1) {
+  font: 20px/1 "lush";
+  z-index: 1;
+  opacity: 1;
+}
+#brand .brand_inner .brand_header .brand_tab li a span:nth-of-type(2) {
+  font: bold 18px/1 "맑은 고딕";
+  z-index: 0;
+  opacity: 0;
+}
+#brand .brand_inner .brand_header .brand_tab li a:hover span:nth-of-type(1) {
+  z-index: 1;
+  opacity: 0;
+}
+#brand .brand_inner .brand_header .brand_tab li a:hover span:nth-of-type(2) {
+  z-index: 2;
+  opacity: 1;
+}
+#brand .brand_inner .brand_header .brand_tab li.on > a > span {
+  font-weight: bold;
+}
+#brand .brand_inner .brand_header .brand_tab .brand_bar {
+  position: absolute;
+  width: 0;
+  background-color: #eee;
+  height: 4px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+#brand .brand_inner .brand_header .brand_title {
+  text-align: center;
+}
+#brand .brand_inner .brand_header .brand_title h1 {
+  font: 5vw/1 "lush";
+  color: #000;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+#brand .brand_inner .brand_header .brand_title h2 {
+  font: bold 20px/1 "맑은 고딕";
+  color: #222;
+  margin-bottom: 30px;
+}
+#brand .brand_inner .brand_header .brand_title span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+#brand .brand_inner .brand_header .brand_title a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+  color: #888;
+}
+#brand .brand_inner .brand_header .brand_title a:hover {
+  text-decoration: underline;
+}
+#brand .brand_inner .brand_content {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+}
+#brand .brand_inner .brand_content > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  width: 100%;
+}
+#brand .brand_inner .brand_content > div.on {
+  opacity: 1;
+  z-index: 1;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(1) > div {
+  height: 400px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(1) > div img {
+  border-radius: 0px 100% 0px 0px;
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(1) > div p {
+  position: absolute;
+  text-align: center;
+  top: -20px;
+  right: -10px;
+  font: 16px/1.5 "맑은 고딕";
+}
+#brand .brand_inner .brand_content > div:nth-of-type(1) > div:nth-of-type(3) p {
+  margin-top: 20px;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) {
+  background-color: #fff;
+  padding-bottom: 150px;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) ul {
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) ul li {
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) ul li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 232px;
+  height: 232px;
+  border-radius: 50%;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) ul li img {
+  width: 232px;
+  height: 232px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#brand .brand_inner .brand_content > div:nth-of-type(2) ul li span {
+  position: absolute;
+  text-align: center;
+  font: bold 18px/1.5 "맑은 고딕";
+  color: #fff;
+  z-index: 2;
+}
+#brand .brand_inner .brand_content::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #eee;
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
 }
 
 #slide {
@@ -920,6 +1128,12 @@ section {
   left: 0;
   bottom: 0;
   z-index: 4;
+}
+
+#subscribe video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .join_wrap {
@@ -1380,19 +1594,19 @@ section {
   display: flex;
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color: #000;
-  background-color: #fff;
-  border-bottom: none;
-}
-.address_pop .tab li.on a {
   background-color: #eee;
   color: #888;
   border: none;
   border-bottom: 1px solid #000;
+}
+.address_pop .tab li.on a {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-bottom: none;
 }
 .address_pop .search {
   width: 100%;
@@ -1423,7 +1637,7 @@ section {
   flex: 8;
   padding: 2px 0;
 }
-.address_pop .search .right .search_wrap #address_searchBtn {
+.address_pop .search .right .search_wrap .address_searchBtn {
   flex: 2;
   border: none;
   background-color: #333;
@@ -1443,7 +1657,7 @@ section {
 }
 .address_pop .result p {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1455,43 +1669,50 @@ section {
   opacity: 1;
   font: 16px/1 "맑은 고딕";
 }
-.address_pop .result table {
+.address_pop .result .address_searchResult {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 6;
+  z-index: 3;
   opacity: 0;
-  width: 100%;
   padding: 0 20px;
-  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
 }
-.address_pop .result table thead {
+.address_pop .result .address_searchResult table {
+  width: 100%;
+}
+.address_pop .result .address_searchResult table thead {
   width: 100%;
   height: 40px;
   background-color: #eee;
 }
-.address_pop .result table thead tr th {
+.address_pop .result .address_searchResult table thead tr th {
   font: 12px/1 "맑은고딕";
   color: #666;
 }
-.address_pop .result table tbody {
+.address_pop .result .address_searchResult table tbody {
   width: 100%;
 }
-.address_pop .result table tbody tr td {
+.address_pop .result .address_searchResult table tbody tr td {
   border-bottom: 1px solid #eee;
 }
-.address_pop .result table tbody tr td:nth-of-type(1) {
+.address_pop .result .address_searchResult table tbody tr td:nth-of-type(1) {
   text-align: center;
   font: 16px/1 "맑은고딕";
   color: #000;
   border-right: 1px solid #eee;
 }
-.address_pop .result table tbody tr td ul {
+.address_pop .result .address_searchResult table tbody tr td ul {
   padding: 10px;
 }
-.address_pop .result table tbody tr td ul li a {
+.address_pop .result .address_searchResult table tbody tr td ul li a {
   font: 14px/1 "맑은고딕";
   color: #000;
+}
+.address_pop .result .address_searchResult table tbody tr td ul li a:hover {
+  text-decoration: underline;
 }
 .address_pop footer {
   width: 100%;
@@ -1627,7 +1848,7 @@ section {
   align-items: center;
 }
 .sub_inner .title h1 {
-  font: bold 36px/1 "맑은 고딕";
+  font: bold 36px/1 "lush";
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -1980,54 +2201,54 @@ section {
   font-size: 80px;
   color: #000;
 }
-.brand_content .brandBox article.lushIdeology {
+.brand_content .brandBox article.lushPolicy {
   width: 100%;
   height: 100%;
   display: block;
   padding: 20px;
 }
-.brand_content .brandBox article.lushIdeology .content {
+.brand_content .brandBox article.lushPolicy .content {
   width: 100%;
   height: 100%;
 }
-.brand_content .brandBox article.lushIdeology .content ul {
+.brand_content .brandBox article.lushPolicy .content ul {
   width: 100%;
   height: 100%;
   display: flex;
   gap: 10px;
 }
-.brand_content .brandBox article.lushIdeology .content ul li {
+.brand_content .brandBox article.lushPolicy .content ul li {
   flex: 1;
   display: flex;
   flex-direction: column;
   position: relative;
   cursor: pointer;
 }
-.brand_content .brandBox article.lushIdeology .content ul li p {
+.brand_content .brandBox article.lushPolicy .content ul li p {
   display: none;
   transition: 0.5s 0.5s;
 }
-.brand_content .brandBox article.lushIdeology .content ul li span {
+.brand_content .brandBox article.lushPolicy .content ul li span {
   display: none;
   transition: 0.5s 0.5s;
 }
-.brand_content .brandBox article.lushIdeology .content ul li img {
+.brand_content .brandBox article.lushPolicy .content ul li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(1);
   transition: 0.5s;
 }
-.brand_content .brandBox article.lushIdeology .content ul li.on {
+.brand_content .brandBox article.lushPolicy .content ul li.on {
   flex: 12;
 }
-.brand_content .brandBox article.lushIdeology .content ul li.on img {
+.brand_content .brandBox article.lushPolicy .content ul li.on img {
   width: 200px;
   height: 200px;
   filter: grayscale(0);
   border-radius: 50%;
 }
-.brand_content .brandBox article.lushIdeology .content ul li.on p:nth-of-type(1) {
+.brand_content .brandBox article.lushPolicy .content ul li.on p:nth-of-type(1) {
   position: absolute;
   display: block;
   top: 0%;
@@ -2036,7 +2257,7 @@ section {
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
 }
-.brand_content .brandBox article.lushIdeology .content ul li.on p:nth-of-type(2) {
+.brand_content .brandBox article.lushPolicy .content ul li.on p:nth-of-type(2) {
   position: absolute;
   display: block;
   top: 17%;

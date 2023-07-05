@@ -103,15 +103,15 @@
             </div>
         </div>
     </div>
-    <div class="address_pop">
+    <aside class="address_pop">
         <header>
             <h1>우편번호 검색</h1>
             <i class="fa-solid fa-x address_top_close"></i>
         </header>
         <div class="address_box">
             <ul class="tab">
-               <li><a href="#">새 우편번호</a></li>
-               <li class="on"><a href="#">구 우편번호</a></li> 
+               <li class="on"><a href="#">새 우편번호</a></li>
+               <li><a href="#">구 우편번호</a></li> 
             </ul>
             <div class="search">
                 <div class="left">
@@ -120,39 +120,42 @@
                 <div class="right">
                     <div class="search_wrap">
                         <input type="text" name="address_input" id="address_input">
-                        <button id="address_searchBtn">검색</button>
+                        <button class="address_searchBtn">검색</button>
                     </div>
                     <p>도로명+건물번호 &#40;예:테헤란로5&#41;| 읍/면/동/리+지번&#40;예:서란동154&#41;</p>
                 </div>
             </div>
             <div class="result">
                 <p>찾으실 지번주소 혹은 도로명주소를 검색해 주세요.</p>
-                <table class="address_searchResult">
-                    <caption class="hidden">주소 검색 결과</caption>
-                    <thead>
-                        <tr>
-                            <th>우편번호</th>
-                            <th>주소</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>06099</td>
-                            <td>
-                                <ul>
-                                    <li><a href="#">서울특별시 강남구 학동로 336</a></li>
-                                    <li><a href="#">서울특별시 강남구 논현동 240-10</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="address_searchResult">
+                    <table>
+                        <caption class="hidden">주소 검색 결과</caption>
+                        <thead>
+                            <tr>
+                                <th>우편번호</th>
+                                <th>주소</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>06099</td>
+                                <td>
+                                    <ul>
+                                        <li><a href="#" class="aBtn">서울특별시 강남구 학동로 336</a></li>
+                                        <li><a href="#" class="aBtn">서울특별시 강남구 논현동 240-10</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
         <footer>
             <button class="address_btm_close">닫기</button>
         </footer>
-    </div>
+    </aside>
     <div class="address_bg"></div>
 </body>
 </html>

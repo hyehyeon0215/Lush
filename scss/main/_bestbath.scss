@@ -3,13 +3,25 @@
     height: 100vh;
     position: relative;
 
+    h1 {
+        z-index: 3;
+        position: absolute;
+        font-size: 25px;
+        opacity: 1;
+        top: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+        letter-spacing: 0px;
+        color: #ddd;
+        font-family: 'LUSH';
+    }
+
     figure{
         width: 100%;
         height: 100vh;
         position: relative;
         overflow: hidden;
         background-color: #fff;
-        // background-color: #ececec;
     
         .banner{
             width: $size;
@@ -43,8 +55,8 @@
                     }
     
                     h2{
-                        font: 24px/1 'anton';
-                        color: #ccc;
+                        font: 24px/1 'LUSH';
+                        color: #000;
                         position: absolute;
                         top: 100%;
                         left: 50%;
@@ -165,12 +177,12 @@
                         transform: translatex(0px) scale(1);
                     
                         h2 {
-                            font-size: 12vw;
+                            font-size: 5vw;
                             opacity: 1;
-                            top: -20vh;
+                            top: -10vh;
                             letter-spacing: 0px;
                             color: #000;
-                            font-family: 'Anton';
+                            font-family: 'LUSH';
 
                         }
     
@@ -181,7 +193,7 @@
                         a {
                             opacity: 1;
                             bottom: -18%;
-                            width: 200px;
+                            width: 150px;
     
                             span {
                                 opacity: 1;
@@ -235,19 +247,20 @@
     
             >div {
                 cursor: pointer;
-                width: 120px;
-                height: 36px;
-                border-radius: 18px;
-                background-color: #999;
-                box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+                width: 100px;
+                height: 100px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font: 12px/1 'arial';
-                color: #fff;
+                color: #000;
     
-                &:hover {
-                    background-color: #555;
+                i {
+                    font-size: 60px;
+
+                    &:hover {
+                        font-size: 80px;
+                    }
                 }
             }
 
@@ -260,6 +273,7 @@
         .popup {
 
             aside {
+                z-index: 4;
                 width: 50vw;
                 height: 100%;
                 position: absolute;
@@ -434,7 +448,7 @@
             }
 
             #twilight_pop {
-                background-image: url(../img/main/best_bath/stwilight/pop.png);
+                background-image: url(../img/main/best_bath/twilight/pop.png);
             }
 
         }

@@ -5,7 +5,7 @@ const historyBtn = document.querySelector(".fa-angle-right");
 const history = document.querySelectorAll(".txt li")
 
 
-const ideology = document.querySelectorAll(".content li")
+const policy = document.querySelectorAll(".lushPolicy .content li")
 
 brandNav.forEach((el, index) => {
     brandNav[index].addEventListener("click", (e)=> {
@@ -43,11 +43,11 @@ historyBtn.addEventListener("click", (e)=> {
 })
 
 
-ideology.forEach((el, index)=> {
+policy.forEach((el, index)=> {
     el.addEventListener("click", ()=> {
-        ideology.forEach((el)=>{
+        policy.forEach((el)=>{
             el.classList.remove("on");
         })
-        ideology[index].classList.add("on");
+        policy[index].classList.add("on");
     })
 })

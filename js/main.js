@@ -12,6 +12,12 @@ const panels = frame.querySelectorAll(".panel li");
 const bar = frame.querySelector(".bar");
 const slideBtns = frame.querySelectorAll(".slidebtns li");
 
+
+const brand_tabs = document.querySelectorAll(".brand_tab li");
+const brand_bar = document.querySelector(".brand_bar");
+const brand_contents =document.querySelectorAll(".brand_content>div");
+const brand_txt = document.querySelector(".brand_title");
+
 const interval = 5000;
 const len = panels.length - 1;
 
@@ -151,4 +157,38 @@ window.addEventListener("scroll", () => {
         header.style.borderBottom = "1px solid #ddd";
         topbar.style.top = 0;
     }
+})
+
+
+brand_bar.style.left = brand_tabs[0].offsetLeft + "px";
+brand_bar.style.width = brand_tabs[0].offsetWidth + "px";
+brand_bar.style.top = brand_tabs[0].offsetTop + brand_tabs[0].offsetHeight + "px";
+
+brand_tabs.forEach((el, index)=>{
+    el.addEventListener("click", (e)=> {
+        let bar_index = 1;
+        e.preventDefault();
+        brand_tabs.forEach((el)=>{
+            el.classList.remove("on");
+        })
+        el.classList.add("on");
+
+        brand_bar.style.left = e.currentTarget.offsetLeft + "px";
+        brand_bar.style.width = e.currentTarget.offsetWidth + "px";
+        brand_bar.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
+
+
+        brand_contents.forEach((el)=>{
+            el.classList.remove("on");
+        })
+        brand_contents[index].classList.add("on");
+
+        let main_title = e.currentTarget.querySelector(".main_title").innerText;
+        let sub_title = e.currentTarget.querySelector(".sub_title").innerText;
+
+        brand_txt.querySelector("h1").innerText = main_title;
+        brand_txt.querySelector("h2").innerText = sub_title;
+
+
+    })
 })

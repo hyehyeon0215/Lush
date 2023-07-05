@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUSH</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/612f062b7d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
 
     <header class="header">
         <div class="header_inner">
@@ -40,7 +45,7 @@
                         <a href="./html/store.html">매장안내</a>
                     </li>
                     <li>
-                        <a href="./html/brand.html">러쉬소개</a>
+                        <a href="./html/sub_brand.html">러쉬소개</a>
                     </li>
                     <li>
                         <a href="./html/community.html">커뮤니티</a>
@@ -56,7 +61,7 @@
     <section id="slide">
         <div class="bar"></div>
         <ul class="panel">
-            <li class="makeup on" style="background: url(img/main/visual/slide1_back.jpg) no-repeat center/cover;">
+            <li class="on" style="background: url(img/main/visual/slide1_back.jpg) no-repeat center/cover;">
                 <img src="img/main/visual/lushtypo1.png" alt="" class="typo">
                 <div class="content">
                     <div><a href="index.html"><img src="img/main/visual/1-1.png" alt=""></a></div>
@@ -73,12 +78,12 @@
                     <div><img src="img/main/visual/slide2-3.jpg" alt=""></div>
                 </div>
             </li>
-            <li style="background: url(img/main/visual/slide3_back.jpg) no-repeat center/cover;">
+            <li class="collabo" style="background: url(img/main/visual/slide3_back.jpg) no-repeat center/cover;">
                 <img src="img/main/visual/lushtypo3.png" alt="" class="typo">
                 <div class="content">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div><img src="img/main/visual/slide3-1.jpg" alt=""></div>
+                    <div><img src="img/main/visual/slide3-2.jpg" alt=""></div>
+                    <div><img src="img/main/visual/slide3-3.jpg" alt=""></div>
                 </div>
             </li>
         </ul>
@@ -90,60 +95,61 @@
     </section>
 
     <section id="bestBath">
+        <h1>Best BATHBOMB</h1>
         <figure>
             <section class="banner">
                 <ul>
                     <li>
                         <h2>Avobath</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/avobath/avobath_.png);"></div>
-                        <a href="#avobath_pop" style="background-color: #86c58a"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>BigBlue</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/bigblue/bigblue_.png);"></div>
-                        <a href="#bigblue_pop" style="background-color: #008c9d";"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Goddess</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/gaddess/gaddess_.png);"></div>
-                        <a href="#gaddess_pop" style="background-color: #6e609b"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Intergalactic</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/intergalactic/intergalactic_.png);"></div>
-                        <a href="#intergalactic_pop" style="background-color: #00bfd8"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Lakes</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/lakes/lakes.png);"></div>
-                        <a href="#lakes_pop" style="background-color: #9dd9e2"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Luxe</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/luxe/luxe_.png);"></div>
-                        <a href="#luxe_pop" style="background-color: #5d457a"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Sakura</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/sakura/sakura_.png);"></div>
-                        <a href="#sakura_pop" style="background-color: #ffd4d4"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>SexBomb</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/sexbomb/sexbomb.png);"></div>
-                        <a href="#sexbomb_pop" style="background-color: #c96186"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                     <li>
                         <h2>Twilight</h2>
                         <div class="inner" style="background-image: url(img/main/best_bath/twilight/twilight.png);"></div>
-                        <a href="#twilight_pop" style="background-color: #cd7cb1"><span>View more</span></a>
+                        <a href="#avobath_pop"><span>Click</span></a>
                     </li>
                 </ul>
             </section>
     
             <nav class="btns">
-                <div class="prev">prev</div>
-                <div class="next">next</div>
+                <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
             </nav>
 
             <section class="popup">
@@ -324,10 +330,71 @@
         </figure>
     </section>
 
-    <section></section> 
-    <section id="subscribe" style="background: url(img/main/best_bath/gaddess/gaddess_back1.jpg);">
-
-    </section>
+    <section id="brand">
+        <div class="brand_inner">
+            <div class="brand_header">
+                <ul class="brand_tab">
+                    <div class="brand_bar"></div>
+                    <li class="on"><a href="#"><span class="main_title">INTRODUCE</span><span class="sub_title">러쉬 소개</span></a></li>
+                    <li><a href="#"><span class="main_title">POLICY</span><span class="sub_title">브랜드 정책</span></a></li>
+                </ul>
+                <div class="brand_title">
+                    <h1 >INTRODUCE</h1>
+                    <h2>러쉬 소개</h2>
+                    <span></span>
+                    <a href="html/sub_brand.html">더 많은 러쉬 이야기 ></a>
+                </div>
+            </div>
+            <article class="brand_content">
+                <div class="on">
+                    <div>
+                        <img src="img/content/brand/introduce1.jpg" alt="">
+                        <p>러쉬는 어떤 이유에서도<br>
+                            <b>제품을 동물실험 하지 않고,<br>
+                                동물실험을 거친 원재료조차</b><br>
+                            사용하지 않습니다.</p>
+                    </div>
+                    <div>
+                        <img src="img/content/brand/introduce2.jpg" alt="">
+                        <p>러쉬는 배쓰 밤, 샤워 젤리,<br>
+                            고체 샴푸와 같은<br>
+                            <b>기발하고 혁신적인</b><br>
+                            제품을 선보입니다.</p>
+                    </div>
+                    <div>
+                        <img src="img/content/brand/introduce3.jpg" alt="">
+                        <p><b>신선함</b>은 러쉬 철학의<br>
+                            핵심입니다.</p>
+                    </div>
+                    <div>
+                        <img src="img/content/brand/introduce4.jpg" alt="">
+                        <p>이 모든 것은<br>
+                            <b>‘고객은 항상 옳다’는 믿음</b>과<br>
+                            러쉬의 핵심 가치인<br>
+                            <b>직원들의 진심</b>이 모여 얻은<br>
+                            결실입니다.</p>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="img/content/brand/Ideology1.jpg" alt=""><span>고객경험</span></li>
+                        <li><img src="img/content/brand/Ideology2.jpg" alt=""><span>다양성<br>포용성</span></li>
+                        <li><img src="img/content/brand/Ideology3.jpg" alt=""><span>기부</span></li>
+                        <li><img src="img/content/brand/Ideology4.jpg" alt=""><span>공정</span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/content/brand/Ideology5.jpg" alt=""><span>거래처 바잉<br>정책</span></li>
+                        <li><img src="img/content/brand/Ideology6.jpg" alt=""><span>피플 케어</span></li>
+                        <li><img src="img/content/brand/Ideology7.jpg" alt=""><span>어스 케어</span></li>
+                        <li><img src="img/content/brand/Ideology8.jpg" alt=""><span>공정 배분</span></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section> 
+    <!-- <section id="subscribe">
+        <video src="img/lush_video2_1.mp4" auto></video>
+    </section> -->
     
     <footer class="footer">
         <div class="footer_inner">
