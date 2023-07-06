@@ -119,6 +119,7 @@
                         justify-content: center;
                         align-items: center;
                         color: #fff;
+                        font: 16px/1 "맑은 고딕";
 
                         &:hover {
                             background-color: #ddd;
@@ -162,5 +163,125 @@
         height: 2px;
         background-color: #333;
         margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: $desktopS) {
+    .sub_header {
+        .header_inner {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .sub_header {
+        .header_inner {
+            width: 90%;
+
+            .bottom_bar {
+
+                #gnb {
+    
+                    li {
+                        a {
+                            width: auto;
+                            height: 50px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width: $tabletS) {
+    .sub_header {
+        height: 100px;
+    
+        .header_inner {
+            width: 90%;
+    
+            .top_bar {
+                .center {
+                    .logo {
+                        width: 90px;
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+    
+            .bottom_bar {
+    
+                #gnb {
+    
+                    li {
+                        a {
+                            width: auto;
+                            height: auto;
+    
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media (max-width: $mobile) {
+    .sub_header {
+        height: 80px;
+    
+        .header_inner {
+            width: 90%;
+
+            .top_bar {
+                height: 100%;
+
+                .left {
+                    width: 30%;
+                    height: 100%;
+                    .bars {
+                        width: 15vw;
+                        height: 15vw;
+                        padding: 0px;
+                        i {
+                            font-size: 5vw;
+                        }
+                    }
+                }
+                .center {
+                    width: 70%;
+                    height: 100%;
+                    .logo {
+                        position: absolute;
+                        right: 5px;
+                        width: 20vw;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+    
+            .bottom_bar {
+                display: none;
+
+            }
+        }
     }
 }

@@ -415,7 +415,7 @@
         height: 1000px;
     
         .brandNav {
-            width: 70%;
+            width: 80%;
             height: 70px;
             display: flex;
             gap: 20px;
@@ -443,6 +443,8 @@
         
         
                         &:hover {
+
+                            flex: 3;
 
                             &::after {
                                 left: 0;

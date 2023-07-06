@@ -139,46 +139,71 @@ a {
   color: #000;
 }
 
-@media screen and (max-width: 539px) {
-  .header {
-    width: 100vw;
+@media (max-width: 1500px) {
+  .header .header_inner {
+    width: 90%;
+  }
+}
+@media (max-width: 1179px) {
+  .header .header_inner {
+    width: 90%;
+  }
+  .header .header_inner .bottom_bar #gnb li a {
+    width: auto;
     height: 50px;
-    position: fixed;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    height: 100px;
   }
   .header .header_inner {
-    width: 100%;
+    width: 90%;
+  }
+  .header .header_inner .top_bar .center .logo {
+    width: 90px;
+  }
+  .header .header_inner .top_bar .right {
+    display: none;
+  }
+  .header .header_inner .bottom_bar #gnb li a {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 539px) {
+  .header {
+    height: 80px;
+  }
+  .header .header_inner {
+    width: 90%;
   }
   .header .header_inner .top_bar {
-    width: 100vw;
-    height: 50px;
+    height: 100%;
   }
   .header .header_inner .top_bar .left {
-    padding: 20px;
+    width: 30%;
+    height: 100%;
   }
   .header .header_inner .top_bar .left .bars {
-    width: 20px;
-    height: 20px;
+    width: 15vw;
+    height: 15vw;
+    padding: 0px;
   }
   .header .header_inner .top_bar .left .bars i {
-    font-size: 20px;
-  }
-  .header .header_inner .top_bar .left .bars:hover {
-    background: none;
+    font-size: 5vw;
   }
   .header .header_inner .top_bar .center {
-    position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
   }
   .header .header_inner .top_bar .center .logo {
-    width: 70px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 20vw;
   }
   .header .header_inner .top_bar .center .logo img {
-    width: 70px;
+    width: 100%;
   }
   .header .header_inner .top_bar .right {
     display: none;
@@ -292,6 +317,7 @@ a {
   justify-content: center;
   align-items: center;
   color: #fff;
+  font: 16px/1 "맑은 고딕";
 }
 .sub_header .header_inner .bottom_bar #gnb li a:hover {
   background-color: #ddd;
@@ -326,6 +352,79 @@ a {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1500px) {
+  .sub_header .header_inner {
+    width: 90%;
+  }
+}
+@media (max-width: 1179px) {
+  .sub_header .header_inner {
+    width: 90%;
+  }
+  .sub_header .header_inner .bottom_bar #gnb li a {
+    width: auto;
+    height: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .sub_header {
+    height: 100px;
+  }
+  .sub_header .header_inner {
+    width: 90%;
+  }
+  .sub_header .header_inner .top_bar .center .logo {
+    width: 90px;
+  }
+  .sub_header .header_inner .top_bar .right {
+    display: none;
+  }
+  .sub_header .header_inner .bottom_bar #gnb li a {
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 539px) {
+  .sub_header {
+    height: 80px;
+  }
+  .sub_header .header_inner {
+    width: 90%;
+  }
+  .sub_header .header_inner .top_bar {
+    height: 100%;
+  }
+  .sub_header .header_inner .top_bar .left {
+    width: 30%;
+    height: 100%;
+  }
+  .sub_header .header_inner .top_bar .left .bars {
+    width: 15vw;
+    height: 15vw;
+    padding: 0px;
+  }
+  .sub_header .header_inner .top_bar .left .bars i {
+    font-size: 5vw;
+  }
+  .sub_header .header_inner .top_bar .center {
+    width: 70%;
+    height: 100%;
+  }
+  .sub_header .header_inner .top_bar .center .logo {
+    position: absolute;
+    right: 5px;
+    width: 20vw;
+  }
+  .sub_header .header_inner .top_bar .center .logo img {
+    width: 100%;
+  }
+  .sub_header .header_inner .top_bar .right {
+    display: none;
+  }
+  .sub_header .header_inner .bottom_bar {
+    display: none;
+  }
+}
 .footer {
   width: 100%;
   height: 400px;
@@ -408,6 +507,142 @@ a {
   color: yellow;
 }
 
+@media (max-width: 1500px) {
+  .footer {
+    height: 300px;
+  }
+  .footer .footer_inner {
+    padding: 50px 20px;
+    width: 1200px;
+  }
+  .footer .footer_inner .footer1 .address p {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer1 .copy p {
+    font: 12px/1 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 {
+    padding-left: 20px;
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+    font: bold 16px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+    font: 14px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div span {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    right: 20px;
+  }
+  .footer .footer_inner .footer2 .footer_menu li a {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+@media (max-width: 1179px) {
+  .footer {
+    height: 500px;
+  }
+  .footer .footer_inner {
+    width: 90%;
+    padding: 50px 0;
+    flex-direction: column;
+  }
+  .footer .footer_inner .footer1 {
+    flex: 1;
+    height: 100px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer .footer_inner .footer1 .address p {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 {
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    flex: 1;
+  }
+  .footer .footer_inner .footer2 .boxes {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .footer .footer_inner .footer2 .boxes div {
+    flex: 1;
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+    font: bold 16px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+    font: 14px/1.5 "맑은 고딕";
+    margin-bottom: 15px;
+  }
+  .footer .footer_inner .footer2 .boxes div span {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    flex: 1.5;
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: 0px;
+  }
+  .footer .footer_inner .footer2 .footer_menu {
+    width: 90%;
+    margin: 50px auto 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .footer .footer_inner .footer2 .footer_menu li a {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    height: auto;
+  }
+  .footer .footer_inner {
+    gap: 50px;
+  }
+  .footer .footer_inner .footer2 .boxes {
+    display: block;
+  }
+  .footer .footer_inner .footer2 .boxes div {
+    margin-bottom: 20px;
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    width: 100%;
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: 0px;
+  }
+  .footer .footer_inner .footer2 .footer_menu {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 539px) {
+  .footer .footer_inner .footer1 .address {
+    display: none;
+  }
+  .footer .footer_inner .footer2 .boxes {
+    display: block;
+  }
+  .footer .footer_inner .footer2 .boxes div {
+    margin-bottom: 20px;
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    width: 100%;
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: -30px;
+  }
+  .footer .footer_inner .footer2 .footer_menu {
+    display: none;
+  }
+}
 .sub_footer {
   margin-top: 200px;
   width: 100%;
@@ -491,6 +726,142 @@ a {
   color: yellow;
 }
 
+@media (max-width: 1500px) {
+  .footer {
+    height: 300px;
+  }
+  .footer .footer_inner {
+    padding: 50px 20px;
+    width: 1200px;
+  }
+  .footer .footer_inner .footer1 .address p {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer1 .copy p {
+    font: 12px/1 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 {
+    padding-left: 20px;
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+    font: bold 16px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+    font: 14px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div span {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    right: 20px;
+  }
+  .footer .footer_inner .footer2 .footer_menu li a {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+@media (max-width: 1179px) {
+  .sub_footer {
+    height: 500px;
+  }
+  .sub_footer .footer_inner {
+    width: 90%;
+    padding: 50px 0;
+    flex-direction: column;
+  }
+  .sub_footer .footer_inner .footer1 {
+    flex: 1;
+    height: 100px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sub_footer .footer_inner .footer1 .address p {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .sub_footer .footer_inner .footer2 {
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    flex: 1;
+  }
+  .sub_footer .footer_inner .footer2 .boxes {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div {
+    flex: 1;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+    font: bold 16px/1.5 "맑은 고딕";
+  }
+  .sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+    font: 14px/1.5 "맑은 고딕";
+    margin-bottom: 15px;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div span {
+    font: 12px/1.5 "맑은 고딕";
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    flex: 1.5;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: 0px;
+  }
+  .sub_footer .footer_inner .footer2 .footer_menu {
+    width: 90%;
+    margin: 50px auto 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .sub_footer .footer_inner .footer2 .footer_menu li a {
+    font: 12px/1 "맑은 고딕";
+  }
+}
+@media (max-width: 800px) {
+  .sub_footer {
+    height: auto;
+  }
+  .sub_footer .footer_inner {
+    gap: 50px;
+  }
+  .sub_footer .footer_inner .footer2 .boxes {
+    display: block;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div {
+    margin-bottom: 20px;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    width: 100%;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: 0px;
+  }
+  .sub_footer .footer_inner .footer2 .footer_menu {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 539px) {
+  .sub_footer .footer_inner .footer1 .address {
+    display: none;
+  }
+  .sub_footer .footer_inner .footer2 .boxes {
+    display: block;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div {
+    margin-bottom: 20px;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
+    width: 100%;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+    bottom: -30px;
+  }
+  .sub_footer .footer_inner .footer2 .footer_menu {
+    display: none;
+  }
+}
 #bestBath {
   width: 100%;
   height: 100vh;
@@ -2432,7 +2803,7 @@ a {
     height: 1000px;
   }
   .brand_content .brandNav {
-    width: 70%;
+    width: 80%;
     height: 70px;
     display: flex;
     gap: 20px;
@@ -2455,6 +2826,9 @@ a {
   .brand_content .brandBox article.lushIntroduce div::after {
     background-color: rgba(0, 0, 0, 0.6);
     left: -100%;
+  }
+  .brand_content .brandBox article.lushIntroduce div:hover {
+    flex: 3;
   }
   .brand_content .brandBox article.lushIntroduce div:hover::after {
     left: 0;
