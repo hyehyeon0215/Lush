@@ -131,3 +131,36 @@
         }
     }
 }
+
+.sub_inner {
+    width: 1500px;
+    margin: 100px auto -50px;
+
+    .title {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+        h1 {
+            font: bold 36px/1 "lush";
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            margin-right: 20px;
+            width: 80px;
+        }
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 50px;
+    }
+}

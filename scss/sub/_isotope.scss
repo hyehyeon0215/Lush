@@ -125,4 +125,58 @@
 }
 
 
+@media (max-width: $desktopS) {
+    .isotope {
+        width: 100%;
+    
+        .isotope_nav {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .isotope {
+
+        .isotope_header {
+            height: 100px;
+            margin-bottom: 20px;
+    
+            .top {
+                height: 50px;
+                margin-bottom: 10px;
+
+                h1 {
+                    a {
+                        img {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+    
+            .bottom {
+                p {
+                    font: 11px/1.5 "맑은 고딕";
+                }
+            }
+        }
+    
+        .isotope_nav {
+            width: 90%;
+            height: 20px;
+            margin: 0px auto 20px;
+        }
+        
+        .isotope_box {
+            
+            article {
+                width: calc(100%/3);
+            }
+        }
+        
+    }
+}
+
+
 
