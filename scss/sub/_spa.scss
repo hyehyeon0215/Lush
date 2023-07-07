@@ -96,3 +96,130 @@
     }
     
 }
+
+
+
+@media (max-width: $desktopS) {
+    .spa_content {
+        width: 90%;
+        margin: 150px auto 0;
+    
+        .spa_box {
+            margin-bottom: 50px;
+    
+
+            .spa_txt {
+    
+                h2 {
+                    font: bold 20px/1 "맑은 고딕";
+                }
+    
+                h3 {
+                    font: bold 16px/1 "맑은 고딕";
+                }
+    
+                h4 {
+                    font: bold 14px/1 "맑은 고딕";
+                }
+    
+                p {
+                    font: 14px/1.5 "맑은 고딕";
+                }
+    
+                button {
+                    margin-top: 20px;
+                    height: 40px;
+                    font: bold 14px/1 "맑은 고딕";
+
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media (max-width: $tablet) {
+    .spa_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: $tabletS) {
+    .spa_content {
+        width: 90%;
+        margin: 150px auto 0;
+    
+        .spa_box {
+            margin-bottom: 50px;
+    
+
+            .spa_txt {
+    
+                h2 {
+                    margin-top: 50px;
+                    font: bold 18px/1 "맑은 고딕";
+                }
+    
+                h3 {
+                    font: bold 14px/1 "맑은 고딕";
+                }
+    
+                h4 {
+                    display: none;
+                }
+    
+                p {
+                    display: none;
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media (max-width: $mobile) {
+    .spa_content {
+    
+        .spa_box {
+
+            flex-direction: column;
+
+            .spa_pic {
+                width: 100%;
+            }
+    
+
+            .spa_txt {
+
+                width: 100%;
+    
+                h2 {
+                    font: bold 20px/1 "맑은 고딕";
+                }
+    
+                h3 {
+                    font: bold 16px/1 "맑은 고딕";
+                }
+    
+                h4 {
+                    font: bold 14px/1 "맑은 고딕";
+                }
+    
+                p {
+                    font: 14px/1.5 "맑은 고딕";
+                }
+    
+                button {
+                    margin-top: 20px;
+                    height: 40px;
+                    font: bold 14px/1 "맑은 고딕";
+
+                }
+    
+            }
+        }
+        
+    }
+}

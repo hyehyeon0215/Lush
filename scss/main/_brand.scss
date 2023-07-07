@@ -243,3 +243,132 @@
     }
 }
 
+
+@media (max-width: $desktopS) {
+    #brand {
+        margin-bottom: 100px;
+    
+        .brand_inner {
+            width: 90%;
+            margin: 0 auto;
+    
+    
+            .brand_content {
+                margin-top: 100px;
+                position: relative;
+                width: 100%;
+                height: 500px;
+                background-color: #fff;
+    
+                >div{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    z-index: 0;
+                    width: 100%;
+    
+                    &.on {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+    
+                    &:nth-of-type(1) {
+    
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        >div {
+                            height: 400px;
+                            margin: 50px auto 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+    
+                            img {
+                                border-radius: 0px 100% 0px 0px;
+                                width: 70%;
+                                height: 90%;
+                                object-fit: cover;
+                            
+                            }
+    
+                            p {
+                                position: absolute;
+                                text-align: center;
+                                top: -20px;
+                                right: -10px;
+                                font: 16px/1.5 "맑은 고딕";
+                            }
+    
+                            &:nth-of-type(3) {
+                                p {
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                    &:nth-of-type(2) {
+                        padding-bottom: 150px;
+                        
+                        ul {
+                            margin: 0 auto;
+                            width: 80%;
+                            height: 300px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+    
+                            li {
+                                height: 400px;
+                                position: relative;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                &::after {
+                                    width: 20vw;
+                                    height: 20vw;
+                                    border-radius: 50%;
+                                }
+    
+                                img {
+                                    width: 20vw;
+                                    height: 20vw;
+                                    object-fit: cover;
+                                    border-radius: 50%;
+    
+                                }
+    
+                                span {
+                                    position: absolute;
+                                    text-align: center;
+                                    font: bold 18px/1.5 "맑은 고딕";
+                                    color: #fff;
+                                    z-index: 2;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+    
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 200px;
+                    background-color: #eee;
+                    position: absolute;
+                    bottom: 70px;
+                    left: 0px;
+                }
+            }
+    
+        }
+    }
+}

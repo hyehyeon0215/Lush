@@ -419,8 +419,8 @@
                 background-image: url(../img/main/best_bath/bigblue/pop.png);
             }
 
-            #gaddess_pop {
-                background-image: url(../img/main/best_bath/gaddess/pop.png);
+            #goddess_pop {
+                background-image: url(../img/main/best_bath/goddess/pop.png);
             }
 
             #intergalactic_pop {
@@ -452,5 +452,18 @@
             }
 
         }
+    }
+}
+
+
+@media (max-width:desktopS) {
+    #bestBath {
+        width: 100vw;
+    }
+}
+
+@media (max-width:tablet) {
+    #bestBath {
+        width: 100vw;
     }
 }

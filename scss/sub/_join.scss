@@ -117,3 +117,55 @@
         }
     }
 }
+
+@media (max-width: $desktopS) {
+    .join_wrap {
+        .back {
+            width: 40%;
+    
+            .txt_box {
+
+                .banner {
+
+                    .banner_txt {
+                        display: block;
+    
+                        h2 {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            margin-left: 0px;
+                        }
+    
+                        h3 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            width: 60%;
+
+            .inner {
+                padding: 0 10px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: $tabletS) {
+    .join_wrap {
+        .back {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+        }
+
+    }
+}

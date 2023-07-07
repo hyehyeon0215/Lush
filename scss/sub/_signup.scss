@@ -373,3 +373,65 @@
     
     }
 }
+
+@media (max-width: $mobile) {
+    .join_wrap {
+        .content {
+            .inner {
+                fieldset {
+    
+                    .signup_table {
+                        width: 90%;
+    
+                        tr {
+    
+                            th, td {
+                                padding: 15px 5px;
+                            }
+    
+    
+                            th {
+                                width: 30%;
+                                font-size: 12px;
+    
+                                input[type='reset'],
+                                input[type="submit"] {
+                                    font: bold 12px/40px "맑은 고딕";
+                                }
+                            }
+    
+                            td {
+    
+                                #toggleBtn {
+                                    width: 25px;
+                                    height: 25px;
+                
+                                }
+    
+                                .email_box {
+                                    flex-wrap: wrap;
+    
+                                    #email {
+                                        width: 40%;
+                                    }
+    
+                                    #domain {
+                                        width: 40%;
+                                    }
+    
+                                    #domain-list {
+                                        width: 50%;
+                                    }
+                                }
+
+                            }
+                    
+                        }
+                    }
+                }
+            
+            }
+        }
+        
+    }
+}
