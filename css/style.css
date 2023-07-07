@@ -145,9 +145,6 @@ a {
   }
 }
 @media (max-width: 1179px) {
-  .header .header_inner {
-    width: 90%;
-  }
   .header .header_inner .bottom_bar #gnb li a {
     width: auto;
     height: 50px;
@@ -186,12 +183,17 @@ a {
     height: 100%;
   }
   .header .header_inner .top_bar .left .bars {
-    width: 15vw;
-    height: 15vw;
+    position: absolute;
+    left: 5px;
+    width: auto;
+    height: auto;
     padding: 0px;
   }
   .header .header_inner .top_bar .left .bars i {
     font-size: 5vw;
+  }
+  .header .header_inner .top_bar .left .bars:hover {
+    background: none;
   }
   .header .header_inner .top_bar .center {
     width: 70%;
@@ -668,7 +670,7 @@ a {
   color: #fff;
 }
 .sub_footer .footer_inner .footer1 .copy p {
-  font: 14px/1 "맑은 고딕";
+  font: 14px/1 "arial";
   color: #ddd;
 }
 .sub_footer .footer_inner .footer2 {
@@ -694,7 +696,7 @@ a {
   color: #fff;
 }
 .sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
-  font: 16px/1.5 "맑은 고딕";
+  font: 16px/1.5 "arial";
   color: #fff;
   margin-bottom: 20px;
 }
@@ -727,35 +729,36 @@ a {
 }
 
 @media (max-width: 1500px) {
-  .footer {
+  .sub_footer {
+    margin-top: 150px;
     height: 300px;
   }
-  .footer .footer_inner {
+  .sub_footer .footer_inner {
     padding: 50px 20px;
     width: 1200px;
   }
-  .footer .footer_inner .footer1 .address p {
+  .sub_footer .footer_inner .footer1 .address p {
     font: 12px/1.5 "맑은 고딕";
   }
-  .footer .footer_inner .footer1 .copy p {
+  .sub_footer .footer_inner .footer1 .copy p {
     font: 12px/1 "맑은 고딕";
   }
-  .footer .footer_inner .footer2 {
+  .sub_footer .footer_inner .footer2 {
     padding-left: 20px;
   }
-  .footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
+  .sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(1) {
     font: bold 16px/1.5 "맑은 고딕";
   }
-  .footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
+  .sub_footer .footer_inner .footer2 .boxes div p:nth-of-type(2) {
     font: 14px/1.5 "맑은 고딕";
   }
-  .footer .footer_inner .footer2 .boxes div span {
+  .sub_footer .footer_inner .footer2 .boxes div span {
     font: 12px/1.5 "맑은 고딕";
   }
-  .footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
     right: 20px;
   }
-  .footer .footer_inner .footer2 .footer_menu li a {
+  .sub_footer .footer_inner .footer2 .footer_menu li a {
     font: 12px/1 "맑은 고딕";
   }
 }
@@ -765,7 +768,7 @@ a {
   }
   .sub_footer .footer_inner {
     width: 90%;
-    padding: 50px 0;
+    padding: 0 0 50px;
     flex-direction: column;
   }
   .sub_footer .footer_inner .footer1 {
@@ -806,11 +809,11 @@ a {
     flex: 1.5;
   }
   .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
-    bottom: 0px;
+    position: unset;
   }
   .sub_footer .footer_inner .footer2 .footer_menu {
     width: 90%;
-    margin: 50px auto 0;
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 10px;
@@ -825,6 +828,7 @@ a {
   }
   .sub_footer .footer_inner {
     gap: 50px;
+    padding: 50px 0;
   }
   .sub_footer .footer_inner .footer2 .boxes {
     display: block;
@@ -834,9 +838,15 @@ a {
   }
   .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) {
     width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
   }
   .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns {
-    bottom: 0px;
+    position: unset;
+  }
+  .sub_footer .footer_inner .footer2 .boxes div:nth-of-type(3) .footer_sns li a img {
+    width: 90%;
   }
   .sub_footer .footer_inner .footer2 .footer_menu {
     margin: 0 auto;
@@ -1247,7 +1257,8 @@ a {
 #brand {
   padding: 50px 0;
   width: 100%;
-  height: 1300px;
+  height: auto;
+  margin-bottom: 200px;
 }
 #brand .brand_inner {
   width: 1500px;
@@ -1388,7 +1399,6 @@ a {
   margin-top: 20px;
 }
 #brand .brand_inner .brand_content > div:nth-of-type(2) {
-  background-color: #fff;
   padding-bottom: 150px;
 }
 #brand .brand_inner .brand_content > div:nth-of-type(2) ul {
@@ -1529,6 +1539,33 @@ a {
   z-index: 4;
 }
 
+@media (max-width: 1179px) {
+  #slide {
+    width: 100vw;
+    height: 100vh;
+  }
+  #slide .panel li .content {
+    right: 7vw;
+  }
+  #slide .panel li .content div {
+    width: 15vw;
+  }
+  #slide .panel li .typo {
+    right: -4vw;
+  }
+}
+@media (max-width: 800px) {
+  #slide .panel li .content {
+    display: none;
+  }
+  #slide .panel li .typo {
+    right: 10px;
+    width: 70%;
+  }
+  #slide .slidebtns {
+    top: 70%;
+  }
+}
 #subscribe video {
   width: 100%;
   height: 100vh;

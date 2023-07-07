@@ -145,8 +145,6 @@
 @media (max-width: $tablet) {
     .header {
         .header_inner {
-            width: 90%;
-
             .bottom_bar {
 
                 #gnb {
@@ -218,11 +216,17 @@
                     width: 30%;
                     height: 100%;
                     .bars {
-                        width: 15vw;
-                        height: 15vw;
+                        position: absolute;
+                        left: 5px;
+                        width: auto;
+                        height: auto;
                         padding: 0px;
                         i {
                             font-size: 5vw;
+                        }
+
+                        &:hover {
+                            background: none;
                         }
                     }
                 }
