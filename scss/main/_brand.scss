@@ -1,21 +1,24 @@
 #brand {
     padding: 50px 0;
     width: 100%;
-    height: auto;
-    margin-bottom: 200px;
+    height: 100vh;
+    margin-bottom: 100px;
 
     .brand_inner {
         width: 1500px;
+        height: 100%;
         margin: 0 auto;
+        overflow: hidden;
 
         .brand_header {
             width: 100%;
-            height: 100%;
+            height: auto;
+            position: relative;
 
             .brand_tab {
-                margin: 200px 50px 0;
                 display: flex;
-                position: relative;
+                position: absolute;
+                top: 20%;
     
                 li {
                     width: 200px;
@@ -80,16 +83,16 @@
                 text-align: center;
     
                 h1 {
-                    font: 5vw/1 "lush";
+                    font: 4vw/1 "lush";
                     color: #000;
                     margin-top: 100px;
                     margin-bottom: 30px;
                 }
     
                 h2 {
-                    font: bold 20px/1 "맑은 고딕";
+                    font: bold 18px/1 "맑은 고딕";
                     color: #222;
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
                 }
 
                 span {
@@ -97,8 +100,6 @@
                     width: 100%;
                     height: 2px;
                     background-color: #000;
-                    // margin: 0 auto;
-                    // animation: bar 1s linear 1;
                 }
 
                 a {
@@ -107,7 +108,6 @@
                     text-align: right;
                     margin-top: 5px;
                     color: #888;
-                    // animation: opacity 1s linear 1;
 
                     &:hover {
                         text-decoration: underline;
@@ -118,10 +118,10 @@
         }
 
         .brand_content {
-            margin-top: 100px;
+            margin-top: 50px;
             position: relative;
             width: 100%;
-            height: 500px;
+            height: auto;
             background-color: #fff;
 
             >div{
@@ -137,17 +137,17 @@
                     z-index: 1;
                 }
 
-                &:nth-of-type(1) {
+                &.main_introduce {
 
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     
                     >div {
                         height: 400px;
                         margin: 50px auto 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
                         position: relative;
 
                         img {
@@ -155,14 +155,13 @@
                             width: 70%;
                             height: 90%;
                             object-fit: cover;
-                        
                         }
 
                         p {
                             position: absolute;
                             text-align: center;
                             top: -20px;
-                            right: -10px;
+                            right: 5%;
                             font: 16px/1.5 "맑은 고딕";
                         }
 
@@ -173,23 +172,34 @@
                         }
                     }
 
+                    &::after {
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 200px;
+                        background-color: #eee;
+                        position: absolute;
+                        bottom: 40px;
+                        left: 0px;
+                        z-index: -1;
+                    }
+
                 }
 
-                &:nth-of-type(2) {
-                    padding-bottom: 150px;
+                &.main_ideology {
                     
                     ul {
-                        margin: 0 auto;
+                        margin: 0 auto 50px;
                         width: 80%;
-                        height: 300px;
+                        height: 200px;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
 
                         li {
-                            height: 400px;
+                            width: 100%;
+                            height: 100%;
                             position: relative;
-                            padding: 20px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -198,18 +208,18 @@
                                 display: block;
                                 content: '';
                                 position: absolute;
+                                height: 200px;
+                                width: 200px;
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                                 background-color: rgba(0,0,0,0.5);
-                                width: 232px;
-                                height: 232px;
                                 border-radius: 50%;
                             }
 
                             img {
-                                width: 232px;
-                                height: 232px;
+                                width: 200px;
+                                height: 200px;
                                 object-fit: cover;
                                 border-radius: 50%;
 
@@ -227,17 +237,6 @@
 
                 }
             }
-
-            &::after {
-                display: block;
-                content: '';
-                width: 100%;
-                height: 200px;
-                background-color: #eee;
-                position: absolute;
-                bottom: 70px;
-                left: 0px;
-            }
         }
 
     }
@@ -245,130 +244,5 @@
 
 
 @media (max-width: $desktopS) {
-    #brand {
-        margin-bottom: 100px;
     
-        .brand_inner {
-            width: 90%;
-            margin: 0 auto;
-    
-    
-            .brand_content {
-                margin-top: 100px;
-                position: relative;
-                width: 100%;
-                height: 500px;
-                background-color: #fff;
-    
-                >div{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
-                    z-index: 0;
-                    width: 100%;
-    
-                    &.on {
-                        opacity: 1;
-                        z-index: 1;
-                    }
-    
-                    &:nth-of-type(1) {
-    
-                        display: flex;
-                        justify-content: space-between;
-                        
-                        >div {
-                            height: 400px;
-                            margin: 50px auto 0;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            position: relative;
-    
-                            img {
-                                border-radius: 0px 100% 0px 0px;
-                                width: 70%;
-                                height: 90%;
-                                object-fit: cover;
-                            
-                            }
-    
-                            p {
-                                position: absolute;
-                                text-align: center;
-                                top: -20px;
-                                right: -10px;
-                                font: 16px/1.5 "맑은 고딕";
-                            }
-    
-                            &:nth-of-type(3) {
-                                p {
-                                    margin-top: 20px;
-                                }
-                            }
-                        }
-    
-                    }
-    
-                    &:nth-of-type(2) {
-                        padding-bottom: 150px;
-                        
-                        ul {
-                            margin: 0 auto;
-                            width: 80%;
-                            height: 300px;
-                            display: flex;
-                            justify-content: space-around;
-                            align-items: center;
-    
-                            li {
-                                height: 400px;
-                                position: relative;
-                                padding: 20px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-    
-                                &::after {
-                                    width: 20vw;
-                                    height: 20vw;
-                                    border-radius: 50%;
-                                }
-    
-                                img {
-                                    width: 20vw;
-                                    height: 20vw;
-                                    object-fit: cover;
-                                    border-radius: 50%;
-    
-                                }
-    
-                                span {
-                                    position: absolute;
-                                    text-align: center;
-                                    font: bold 18px/1.5 "맑은 고딕";
-                                    color: #fff;
-                                    z-index: 2;
-                                }
-                            }
-                        }
-    
-                    }
-                }
-    
-                &::after {
-                    display: block;
-                    content: '';
-                    width: 100%;
-                    height: 200px;
-                    background-color: #eee;
-                    position: absolute;
-                    bottom: 70px;
-                    left: 0px;
-                }
-            }
-    
-        }
-    }
 }
