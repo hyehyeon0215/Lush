@@ -1,3 +1,11 @@
+
+const menu_icon = document.querySelector(".menu_icon");
+const menu_tab = document.querySelector(".menu_tab");
+const menu_close = document.querySelector(".menu_close");
+
+
+
+
 const banner_ul = document.querySelector(".banner ul");
 const banners = banner_ul.children;
 const btns = document.querySelector(".btns");
@@ -27,7 +35,6 @@ let timer = null;
 startRolling();
 
 
-
 function startRolling() {
 
     bar.style.display = "block";
@@ -45,7 +52,6 @@ function stopRolling() {
 
     clearInterval(timer);
 }
-
 
 
 function activation(index) {
@@ -138,12 +144,8 @@ function active() {
 }
 
 
-// console.log(document.body.clientWidth);
 
-// let bars = document.querySelector(".bars");
-
-
-deviceSize = document.body.clientWidth;
+const deviceSize = document.body.clientWidth;
 
 if (deviceSize > 539) {
     window.addEventListener("scroll", () => {
@@ -165,6 +167,18 @@ if (deviceSize > 539) {
     })
 }
 
+
+
+menu_icon.addEventListener("click", function(e) {
+    e.preventDefault();
+    menu_tab.style.left = "0px";
+})
+
+
+menu_close.addEventListener("click", function(e) {
+    e.preventDefault();
+    menu_tab.style.left = "-400px";
+})
 
 
 

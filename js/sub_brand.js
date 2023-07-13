@@ -5,7 +5,11 @@ const historyBtn = document.querySelector(".fa-angle-right");
 const history = document.querySelectorAll(".txt li")
 
 
-const policy = document.querySelectorAll(".lushPolicy .content li")
+const policy = document.querySelectorAll(".lushPolicy .content li");
+
+const sub_menuicon = document.querySelector(".sub_menuicon");
+const sub_menutab = document.querySelector(".sub_menutab");
+const menu_close = document.querySelector(".menu_close");
 
 brandNav.forEach((el, index) => {
     brandNav[index].addEventListener("click", (e)=> {
@@ -50,4 +54,16 @@ policy.forEach((el, index)=> {
         })
         policy[index].classList.add("on");
     })
+})
+
+
+sub_menuicon.addEventListener("click", function(e) {
+    e.preventDefault();
+    sub_menutab.style.left = "0px";
+})
+
+
+menu_close.addEventListener("click", function(e) {
+    e.preventDefault();
+    sub_menutab.style.left = "-400px";
 })

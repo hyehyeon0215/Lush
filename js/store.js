@@ -5,6 +5,9 @@ const storeImg = document.querySelectorAll(".result_store>ul>li");
 const store = document.querySelector(".result_store");
 const localSearchBtn = document.querySelector(".localSearchBtn");
 const resultList = document.querySelector(".result_list");
+const sub_menuicon = document.querySelector(".sub_menuicon");
+const sub_menutab = document.querySelector(".sub_menutab");
+const menu_close = document.querySelector(".menu_close");
 
 var mapoptions = {
     center: new kakao.maps.LatLng(37.583143, 127.0000885),
@@ -87,3 +90,15 @@ function moveTo(target) {
     const moveLatlng = target;
     map.setCenter(moveLatlng);
 }
+
+
+sub_menuicon.addEventListener("click", function(e) {
+    e.preventDefault();
+    sub_menutab.style.left = "0px";
+})
+
+
+menu_close.addEventListener("click", function(e) {
+    e.preventDefault();
+    sub_menutab.style.left = "-400px";
+})
