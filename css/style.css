@@ -1556,6 +1556,202 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 539px) {
+  #brand {
+    overflow: hidden;
+    width: 100vw;
+  }
+  #brand .brand_inner {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #brand .brand_inner .brand_header {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #brand .brand_inner .brand_header .brand_tab {
+    display: flex;
+    position: absolute;
+    top: 20%;
+  }
+  #brand .brand_inner .brand_header .brand_tab li {
+    width: 200px;
+    height: 40px;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 40px;
+    color: #000;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a span:nth-of-type(1) {
+    font: 20px/1 "lush";
+    z-index: 1;
+    opacity: 1;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a span:nth-of-type(2) {
+    font: bold 18px/1 "맑은 고딕";
+    z-index: 0;
+    opacity: 0;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a:hover span:nth-of-type(1) {
+    z-index: 1;
+    opacity: 0;
+  }
+  #brand .brand_inner .brand_header .brand_tab li a:hover span:nth-of-type(2) {
+    z-index: 2;
+    opacity: 1;
+  }
+  #brand .brand_inner .brand_header .brand_tab li.on > a > span {
+    font-weight: bold;
+  }
+  #brand .brand_inner .brand_header .brand_tab .brand_bar {
+    position: absolute;
+    width: 0;
+    background-color: #eee;
+    height: 4px;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  #brand .brand_inner .brand_header .brand_title {
+    text-align: center;
+  }
+  #brand .brand_inner .brand_header .brand_title h1 {
+    font: 4vw/1 "lush";
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  #brand .brand_inner .brand_header .brand_title h2 {
+    font: bold 18px/1 "맑은 고딕";
+    color: #222;
+    margin-bottom: 50px;
+  }
+  #brand .brand_inner .brand_header .brand_title span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  #brand .brand_inner .brand_header .brand_title a {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+    color: #888;
+  }
+  #brand .brand_inner .brand_header .brand_title a:hover {
+    text-decoration: underline;
+  }
+  #brand .brand_inner .brand_content {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #brand .brand_inner .brand_content > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    width: 100%;
+  }
+  #brand .brand_inner .brand_content > div.on {
+    opacity: 1;
+    z-index: 1;
+  }
+  #brand .brand_inner .brand_content > div.main_introduce {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #brand .brand_inner .brand_content > div.main_introduce > div {
+    height: 400px;
+    margin: 50px auto 0;
+    position: relative;
+  }
+  #brand .brand_inner .brand_content > div.main_introduce > div img {
+    border-radius: 0px 100% 0px 0px;
+    width: 70%;
+    height: 90%;
+    object-fit: cover;
+  }
+  #brand .brand_inner .brand_content > div.main_introduce > div p {
+    position: absolute;
+    text-align: center;
+    top: -20px;
+    right: 5%;
+    font: 16px/1.5 "맑은 고딕";
+  }
+  #brand .brand_inner .brand_content > div.main_introduce > div:nth-of-type(3) p {
+    margin-top: 20px;
+  }
+  #brand .brand_inner .brand_content > div.main_introduce::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    z-index: -1;
+  }
+  #brand .brand_inner .brand_content > div.main_ideology ul {
+    margin: 0 auto 50px;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #brand .brand_inner .brand_content > div.main_ideology ul li {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #brand .brand_inner .brand_content > div.main_ideology ul li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  #brand .brand_inner .brand_content > div.main_ideology ul li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  #brand .brand_inner .brand_content > div.main_ideology ul li span {
+    position: absolute;
+    text-align: center;
+    font: bold 18px/1.5 "맑은 고딕";
+    color: #fff;
+    z-index: 2;
+  }
+}
 #slide {
   width: 100%;
   height: 100vh;
