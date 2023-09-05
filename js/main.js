@@ -4,8 +4,6 @@ const menu_tab = document.querySelector(".menu_tab");
 const menu_close = document.querySelector(".menu_close");
 
 
-
-
 const banner_ul = document.querySelector(".banner ul");
 const banners = banner_ul.children;
 const btns = document.querySelector(".btns");
