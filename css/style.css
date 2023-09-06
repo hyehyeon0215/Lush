@@ -270,10 +270,10 @@ a {
 }
 @media (max-width: 539px) {
   .header {
-    height: 80px;
+    height: 50px;
   }
   .header .header_inner {
-    width: 90%;
+    width: 95%;
   }
   .header .header_inner .top_bar {
     height: 100%;
@@ -282,17 +282,17 @@ a {
     width: 30%;
     height: 100%;
   }
-  .header .header_inner .top_bar .left .bars {
+  .header .header_inner .top_bar .left .menu_icon {
     position: absolute;
     left: 5px;
     width: auto;
     height: auto;
     padding: 0px;
   }
-  .header .header_inner .top_bar .left .bars i {
-    font-size: 5vw;
+  .header .header_inner .top_bar .left .menu_icon i {
+    font-size: 20px;
   }
-  .header .header_inner .top_bar .left .bars:hover {
+  .header .header_inner .top_bar .left .menu_icon:hover {
     background: none;
   }
   .header .header_inner .top_bar .center {
@@ -2344,26 +2344,9 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
-.join_wrap .content .inner fieldset .signup_table tr td .email_box {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-.join_wrap .content .inner fieldset .signup_table tr td .email_box #email {
-  width: 30%;
-}
-.join_wrap .content .inner fieldset .signup_table tr td .email_box span {
-  font-size: 14px;
-}
-.join_wrap .content .inner fieldset .signup_table tr td .email_box #domain {
-  width: 30%;
-}
-.join_wrap .content .inner fieldset .signup_table tr td .email_box #domain-list {
-  padding: 5px 20px 5px 5px;
-}
 .join_wrap .content .inner fieldset .signup_table tr td p {
   font: 12px/1 "맑은 고딕";
-  color: 0;
+  color: red;
   text-align: left;
   margin-top: 7px;
 }
@@ -2575,18 +2558,6 @@ a {
     width: 25px;
     height: 25px;
   }
-  .join_wrap .content .inner fieldset .signup_table tr td .email_box {
-    flex-wrap: wrap;
-  }
-  .join_wrap .content .inner fieldset .signup_table tr td .email_box #email {
-    width: 40%;
-  }
-  .join_wrap .content .inner fieldset .signup_table tr td .email_box #domain {
-    width: 40%;
-  }
-  .join_wrap .content .inner fieldset .signup_table tr td .email_box #domain-list {
-    width: 50%;
-  }
 }
 .isotope {
   width: 1500px;
@@ -2642,13 +2613,13 @@ a {
   margin: 0px auto 50px;
   background: linear-gradient(to right, white, red, orange, yellow, green, blue, purple, black);
   display: flex;
-  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+  cursor: url("../../img/icon/spoid.png") 16 16;
 }
 .isotope .isotope_nav li {
-  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+  cursor: url("../../img/icon/spoid.png") 16 16;
 }
 .isotope .isotope_nav li a {
-  cursor: url("../../img/icon/spoid.png") 16 16, progress;
+  cursor: url("../../img/icon/spoid.png") 16 16;
   display: flex;
   width: 187.5px;
   height: 100%;

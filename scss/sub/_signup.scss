@@ -111,30 +111,9 @@
                                 margin-bottom: 10px;
                             }
 
-                            .email_box {
-                                display: flex;
-                                gap: 5px;
-                                align-items: center;
-
-                                #email {
-                                    width: 30%;
-                                }
-                                span {
-                                    font-size: 14px;
-                                }
-
-                                #domain {
-                                    width: 30%;
-                                }
-
-                                #domain-list {
-                                    padding: 5px 20px 5px 5px;
-                                }
-                            }
-
                             p {
                                 font: 12px/1 "맑은 고딕";
-                                color: red($color: #000000);
+                                color: red;
                                 text-align: left;
                                 margin-top: 7px;
                             }
@@ -406,22 +385,6 @@
                                     width: 25px;
                                     height: 25px;
                 
-                                }
-    
-                                .email_box {
-                                    flex-wrap: wrap;
-    
-                                    #email {
-                                        width: 40%;
-                                    }
-    
-                                    #domain {
-                                        width: 40%;
-                                    }
-    
-                                    #domain-list {
-                                        width: 50%;
-                                    }
                                 }
 
                             }

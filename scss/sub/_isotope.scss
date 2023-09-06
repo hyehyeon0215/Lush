@@ -58,12 +58,12 @@
         margin: 0px auto 50px;
         background: linear-gradient(to right, white, red, orange, yellow, green, blue, purple, black);
         display: flex;
-        cursor: url("../../img/icon/spoid.png") 16 16, progress;
+        cursor: url("../../img/icon/spoid.png") 16 16;
 
         li {
-            cursor: url("../../img/icon/spoid.png") 16 16, progress;
+            cursor: url("../../img/icon/spoid.png") 16 16;
             a {
-                cursor: url("../../img/icon/spoid.png") 16 16, progress;
+                cursor: url("../../img/icon/spoid.png") 16 16;
                 display: flex;
                 width: calc(1500px/8);
                 height: 100%;
